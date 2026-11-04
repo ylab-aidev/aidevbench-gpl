@@ -1,0 +1,2184 @@
+{
+ "schema": "aidevbench-gpl-source-index-components-1",
+ "release": "1.0.0",
+ "components": {
+  "bun": {
+   "name": "Bun (official release binary, Linux and macOS)",
+   "version": "1.4.4",
+   "license": "MIT; statically linked JavaScriptCore/WebKit (LGPL-2.0/BSD) and TinyCC (LGPL-2.1)",
+   "obligation": "copyleft",
+   "platforms": {
+    "linux-aarch64": 1,
+    "linux-x86_64": 1,
+    "macos-arm64": 1
+   },
+   "sources": [
+    {
+     "asset": "aidevbench-1.0.0-src-linux-bun-1.4.4.tar",
+     "member": "linux/bun/bun-v1.4.4.tar.gz"
+    },
+    {
+     "asset": "aidevbench-1.0.0-src-linux-bun-1.4.4.tar",
+     "member": "linux/bun/oven-sh-webkit-d6375c72affe0f70222cdcb45012b10f0bf3a9d5-jsc.tar.xz"
+    },
+    {
+     "asset": "aidevbench-1.0.0-src-linux-bun-1.4.4.tar",
+     "member": "linux/bun/oven-sh-tinycc-05f0fafaa3be31e31d7b4b5c17dc60f62c991171.tar.gz"
+    }
+   ]
+  },
+  "chromium-win": {
+   "name": "Chromium snapshot r1705623 (Windows x64/ARM64; macOS arm64 Mac_Arm)",
+   "version": "156.0.8076.0, chromium/src@3e4b22a1d5ad1c1e101c90668f7015e361de5c79",
+   "license": "BSD-3-Clause and others; Blink (LGPL-2.0/2.1), FFmpeg (LGPL-2.1), MPL-2.0 parts",
+   "obligation": "copyleft",
+   "platforms": {
+    "macos-arm64": 357,
+    "windows-arm64": 249,
+    "windows-x64": 249
+   },
+   "sources": [
+    {
+     "asset": "aidevbench-1.0.0-src-chromium-156.0.8076.0-r1705623.tar.xz.*",
+     "member": "whole tree (src/ and DEPS dependencies at the pinned commits, DEPS evaluated for Windows; the Mac_Arm build uses the same chromium/src revision, and its LGPL parts are in this tree)"
+    }
+   ]
+  },
+  "cmake": {
+   "name": "CMake (other executables and data)",
+   "version": "4.4.5",
+   "license": "BSD-3-Clause and bundled notices",
+   "obligation": "provided",
+   "platforms": {
+    "linux-aarch64": 4158,
+    "linux-x86_64": 8814,
+    "macos-arm64": 4134,
+    "windows-arm64": 8816,
+    "windows-x64": 8816
+   },
+   "sources": [
+    {
+     "asset": "aidevbench-1.0.0-src-cmake-4.4.5-qt.tar",
+     "member": "common/cmake/cmake-4.4.5.tar.gz"
+    }
+   ]
+  },
+  "cmake-gui-qt5": {
+   "name": "cmake-gui (CMake 4.4.5 official Linux build, statically linked Qt)",
+   "version": "CMake 4.4.5, Qt 5.12.0",
+   "license": "BSD-3-Clause (CMake), LGPL-3.0-only (Qt)",
+   "obligation": "copyleft",
+   "platforms": {
+    "linux-aarch64": 1,
+    "linux-x86_64": 1
+   },
+   "sources": [
+    {
+     "asset": "aidevbench-1.0.0-src-cmake-4.4.5-qt.tar",
+     "member": "common/cmake/cmake-4.4.5.tar.gz"
+    },
+    {
+     "asset": "aidevbench-1.0.0-src-cmake-4.4.5-qt.tar",
+     "member": "common/cmake-qt/qt-everywhere-src-5.12.0.tar.xz"
+    }
+   ]
+  },
+  "cmake-gui-qt6": {
+   "name": "cmake-gui (CMake 4.4.5 official Windows build, statically linked Qt)",
+   "version": "CMake 4.4.5, qtbase 6.10.1",
+   "license": "BSD-3-Clause (CMake), LGPL-3.0-only (Qt)",
+   "obligation": "copyleft",
+   "platforms": {
+    "windows-arm64": 1,
+    "windows-x64": 1
+   },
+   "sources": [
+    {
+     "asset": "aidevbench-1.0.0-src-cmake-4.4.5-qt.tar",
+     "member": "common/cmake/cmake-4.4.5.tar.gz"
+    },
+    {
+     "asset": "aidevbench-1.0.0-src-cmake-4.4.5-qt.tar",
+     "member": "common/cmake-qt/qtbase-everywhere-src-6.10.1.tar.xz"
+    }
+   ]
+  },
+  "debian:chromium": {
+   "name": "Chromium (Debian 12 security build)",
+   "version": "156.0.8078.73-1~deb12u1",
+   "license": "BSD-3-Clause and others; Blink (LGPL), FFmpeg (LGPL-2.1), MPL-2.0 parts",
+   "obligation": "copyleft",
+   "platforms": {
+    "linux-aarch64": 19,
+    "linux-x86_64": 19
+   },
+   "sources": [
+    {
+     "asset": "aidevbench-1.0.0-src-linux-debian-12-chromium-156.0.8078.73.tar",
+     "member": "linux/debian/chromium/156.0.8078.73-1~deb12u1/"
+    }
+   ]
+  },
+  "debian:dav1d": {
+   "name": "Debian 12 source package dav1d",
+   "version": "1.0.0-2+deb12u1",
+   "license": "see debian/copyright (permissive)",
+   "obligation": "provided",
+   "platforms": {
+    "linux-aarch64": 1,
+    "linux-x86_64": 1
+   },
+   "sources": [
+    {
+     "asset": "aidevbench-1.0.0-src-linux-debian-12-libs.tar",
+     "member": "linux/debian/dav1d/1.0.0-2+deb12u1/"
+    }
+   ]
+  },
+  "debian:double-conversion": {
+   "name": "Debian 12 source package double-conversion",
+   "version": "3.2.1-1",
+   "license": "see debian/copyright (permissive)",
+   "obligation": "provided",
+   "platforms": {
+    "linux-aarch64": 1,
+    "linux-x86_64": 1
+   },
+   "sources": [
+    {
+     "asset": "aidevbench-1.0.0-src-linux-debian-12-libs.tar",
+     "member": "linux/debian/double-conversion/3.2.1-1/"
+    }
+   ]
+  },
+  "debian:flac": {
+   "name": "Debian 12 source package flac",
+   "version": "1.4.2+ds-2",
+   "license": "see debian/copyright (permissive)",
+   "obligation": "provided",
+   "platforms": {
+    "linux-aarch64": 1,
+    "linux-x86_64": 1
+   },
+   "sources": [
+    {
+     "asset": "aidevbench-1.0.0-src-linux-debian-12-libs.tar",
+     "member": "linux/debian/flac/1.4.2+ds-2/"
+    }
+   ]
+  },
+  "debian:harfbuzz": {
+   "name": "Debian 12 source package harfbuzz",
+   "version": "6.0.0+dfsg-3",
+   "license": "see debian/copyright (permissive)",
+   "obligation": "provided",
+   "platforms": {
+    "linux-aarch64": 1,
+    "linux-x86_64": 1
+   },
+   "sources": [
+    {
+     "asset": "aidevbench-1.0.0-src-linux-debian-12-libs.tar",
+     "member": "linux/debian/harfbuzz/6.0.0+dfsg-3/"
+    }
+   ]
+  },
+  "debian:lame": {
+   "name": "Debian 12 source package lame",
+   "version": "3.100-6",
+   "license": "LGPL-2.0-or-later",
+   "obligation": "copyleft",
+   "platforms": {
+    "linux-aarch64": 1,
+    "linux-x86_64": 1
+   },
+   "sources": [
+    {
+     "asset": "aidevbench-1.0.0-src-linux-debian-12-libs.tar",
+     "member": "linux/debian/lame/3.100-6/"
+    }
+   ]
+  },
+  "debian:lcms2": {
+   "name": "Debian 12 source package lcms2",
+   "version": "2.14-2+deb12u1",
+   "license": "see debian/copyright (permissive)",
+   "obligation": "provided",
+   "platforms": {
+    "linux-aarch64": 1,
+    "linux-x86_64": 1
+   },
+   "sources": [
+    {
+     "asset": "aidevbench-1.0.0-src-linux-debian-12-libs.tar",
+     "member": "linux/debian/lcms2/2.14-2+deb12u1/"
+    }
+   ]
+  },
+  "debian:libasyncns": {
+   "name": "Debian 12 source package libasyncns",
+   "version": "0.8-6",
+   "license": "LGPL-2.1-or-later",
+   "obligation": "copyleft",
+   "platforms": {
+    "linux-aarch64": 1,
+    "linux-x86_64": 1
+   },
+   "sources": [
+    {
+     "asset": "aidevbench-1.0.0-src-linux-debian-12-libs.tar",
+     "member": "linux/debian/libasyncns/0.8-6/"
+    }
+   ]
+  },
+  "debian:libjpeg-turbo": {
+   "name": "Debian 12 source package libjpeg-turbo",
+   "version": "1:2.1.5-2",
+   "license": "see debian/copyright (permissive)",
+   "obligation": "provided",
+   "platforms": {
+    "linux-aarch64": 1,
+    "linux-x86_64": 1
+   },
+   "sources": [
+    {
+     "asset": "aidevbench-1.0.0-src-linux-debian-12-libs.tar",
+     "member": "linux/debian/libjpeg-turbo/1%3a2.1.5-2/"
+    }
+   ]
+  },
+  "debian:libogg": {
+   "name": "Debian 12 source package libogg",
+   "version": "1.3.5-3",
+   "license": "see debian/copyright (permissive)",
+   "obligation": "provided",
+   "platforms": {
+    "linux-aarch64": 1,
+    "linux-x86_64": 1
+   },
+   "sources": [
+    {
+     "asset": "aidevbench-1.0.0-src-linux-debian-12-libs.tar",
+     "member": "linux/debian/libogg/1.3.5-3/"
+    }
+   ]
+  },
+  "debian:libsndfile": {
+   "name": "Debian 12 source package libsndfile",
+   "version": "1.2.0-1+deb12u1",
+   "license": "LGPL-2.1-or-later",
+   "obligation": "copyleft",
+   "platforms": {
+    "linux-aarch64": 1,
+    "linux-x86_64": 1
+   },
+   "sources": [
+    {
+     "asset": "aidevbench-1.0.0-src-linux-debian-12-libs.tar",
+     "member": "linux/debian/libsndfile/1.2.0-1+deb12u1/"
+    }
+   ]
+  },
+  "debian:libvorbis": {
+   "name": "Debian 12 source package libvorbis",
+   "version": "1.3.7-1",
+   "license": "see debian/copyright (permissive)",
+   "obligation": "provided",
+   "platforms": {
+    "linux-aarch64": 2,
+    "linux-x86_64": 2
+   },
+   "sources": [
+    {
+     "asset": "aidevbench-1.0.0-src-linux-debian-12-libs.tar",
+     "member": "linux/debian/libvorbis/1.3.7-1/"
+    }
+   ]
+  },
+  "debian:libxnvctrl": {
+   "name": "Debian 12 source package libxnvctrl",
+   "version": "525.85.05-3~deb12u1",
+   "license": "see debian/copyright (permissive)",
+   "obligation": "provided",
+   "platforms": {
+    "linux-aarch64": 1,
+    "linux-x86_64": 1
+   },
+   "sources": [
+    {
+     "asset": "aidevbench-1.0.0-src-linux-debian-12-libs.tar",
+     "member": "linux/debian/libxnvctrl/525.85.05-3~deb12u1/"
+    }
+   ]
+  },
+  "debian:minizip": {
+   "name": "Debian 12 source package minizip",
+   "version": "1.1-8+deb12u1",
+   "license": "see debian/copyright (permissive)",
+   "obligation": "provided",
+   "platforms": {
+    "linux-aarch64": 1,
+    "linux-x86_64": 1
+   },
+   "sources": [
+    {
+     "asset": "aidevbench-1.0.0-src-linux-debian-12-libs.tar",
+     "member": "linux/debian/minizip/1.1-8+deb12u1/"
+    }
+   ]
+  },
+  "debian:mpg123": {
+   "name": "Debian 12 source package mpg123",
+   "version": "1.31.2-1+deb12u1",
+   "license": "LGPL-2.1-only",
+   "obligation": "copyleft",
+   "platforms": {
+    "linux-aarch64": 1,
+    "linux-x86_64": 1
+   },
+   "sources": [
+    {
+     "asset": "aidevbench-1.0.0-src-linux-debian-12-libs.tar",
+     "member": "linux/debian/mpg123/1.31.2-1+deb12u1/"
+    }
+   ]
+  },
+  "debian:openh264": {
+   "name": "Debian 12 source package openh264",
+   "version": "2.3.1+dfsg-3+deb12u1",
+   "license": "see debian/copyright (permissive)",
+   "obligation": "provided",
+   "platforms": {
+    "linux-aarch64": 1,
+    "linux-x86_64": 1
+   },
+   "sources": [
+    {
+     "asset": "aidevbench-1.0.0-src-linux-debian-12-libs.tar",
+     "member": "linux/debian/openh264/2.3.1+dfsg-3+deb12u1/"
+    }
+   ]
+  },
+  "debian:openjpeg2": {
+   "name": "Debian 12 source package openjpeg2",
+   "version": "2.5.0-2+deb12u3",
+   "license": "see debian/copyright (permissive)",
+   "obligation": "provided",
+   "platforms": {
+    "linux-aarch64": 1,
+    "linux-x86_64": 1
+   },
+   "sources": [
+    {
+     "asset": "aidevbench-1.0.0-src-linux-debian-12-libs.tar",
+     "member": "linux/debian/openjpeg2/2.5.0-2+deb12u3/"
+    }
+   ]
+  },
+  "debian:opus": {
+   "name": "Debian 12 source package opus",
+   "version": "1.3.1-3",
+   "license": "see debian/copyright (permissive)",
+   "obligation": "provided",
+   "platforms": {
+    "linux-aarch64": 1,
+    "linux-x86_64": 1
+   },
+   "sources": [
+    {
+     "asset": "aidevbench-1.0.0-src-linux-debian-12-libs.tar",
+     "member": "linux/debian/opus/1.3.1-3/"
+    }
+   ]
+  },
+  "debian:pulseaudio": {
+   "name": "Debian 12 source package pulseaudio",
+   "version": "16.1+dfsg1-2",
+   "license": "LGPL-2.1-or-later",
+   "obligation": "copyleft",
+   "platforms": {
+    "linux-aarch64": 3,
+    "linux-x86_64": 3
+   },
+   "sources": [
+    {
+     "asset": "aidevbench-1.0.0-src-linux-debian-12-libs.tar",
+     "member": "linux/debian/pulseaudio/16.1+dfsg1-2/"
+    }
+   ]
+  },
+  "debian:sqlite3": {
+   "name": "Debian 12 source package sqlite3",
+   "version": "3.40.1-2+deb12u2",
+   "license": "see debian/copyright (permissive)",
+   "obligation": "provided",
+   "platforms": {
+    "linux-aarch64": 1,
+    "linux-x86_64": 1
+   },
+   "sources": [
+    {
+     "asset": "aidevbench-1.0.0-src-linux-debian-12-libs.tar",
+     "member": "linux/debian/sqlite3/3.40.1-2+deb12u2/"
+    }
+   ]
+  },
+  "gfw-bash": {
+   "name": "GNU Bash (MSYS2, Git for Windows build)",
+   "version": "5.3.015-2",
+   "license": "GPL-3.0-or-later",
+   "obligation": "copyleft",
+   "platforms": {
+    "windows-arm64": 1,
+    "windows-x64": 2
+   },
+   "sources": [
+    {
+     "asset": "aidevbench-1.0.0-src-windows-git-for-windows.tar",
+     "member": "windows/git-for-windows-pacman/bash-5.3.015-2.src.tar.gz"
+    }
+   ]
+  },
+  "gfw-curl": {
+   "name": "curl (Git for Windows build)",
+   "version": "8.23.0-1",
+   "license": "curl",
+   "obligation": "provided",
+   "platforms": {
+    "windows-arm64": 4
+   },
+   "sources": [
+    {
+     "asset": "aidevbench-1.0.0-src-windows-git-for-windows.tar",
+     "member": "windows/git-for-windows-pacman/mingw-w64-curl-8.23.0-1.src.tar.gz"
+    }
+   ]
+  },
+  "gfw-gcm": {
+   "name": "Git Credential Manager (av_libglesv2.dll, ANGLE)",
+   "version": "2.9.1-1",
+   "license": "MIT (ANGLE: BSD-3-Clause)",
+   "obligation": "provided",
+   "platforms": {
+    "windows-arm64": 2
+   },
+   "sources": [
+    {
+     "asset": "aidevbench-1.0.0-src-windows-git-for-windows.tar",
+     "member": "windows/git-for-windows-pacman/mingw-w64-git-credential-manager-2.9.1-1.src.tar.gz"
+    }
+   ]
+  },
+  "gfw-git": {
+   "name": "Git for Windows (git, git-wrapper, scalar, headless-git, edit-git-bash)",
+   "version": "2.56.0.windows.4 (mingw-w64-git 2.56.0.4-1)",
+   "license": "GPL-2.0-only (bundled files keep their own notices)",
+   "obligation": "copyleft",
+   "platforms": {
+    "windows-arm64": 567,
+    "windows-x64": 38
+   },
+   "sources": [
+    {
+     "asset": "aidevbench-1.0.0-src-windows-git-for-windows.tar",
+     "member": "windows/git-for-windows-pacman/mingw-w64-git-2.56.0.4-1.src.tar.gz"
+    },
+    {
+     "asset": "aidevbench-1.0.0-src-windows-git-for-windows.tar",
+     "member": "windows/git-for-windows/git-for-windows-git-v2.56.0.windows.4.tar.gz"
+    }
+   ]
+  },
+  "gfw-git-extra": {
+   "name": "Git for Windows git-extra (blocked-file-util, git-askpass, git-askyesno, proxy-lookup, /etc files)",
+   "version": "1.1.715.85f886165-1",
+   "license": "GPL-2.0-or-later",
+   "obligation": "copyleft",
+   "platforms": {
+    "windows-arm64": 59,
+    "windows-x64": 18
+   },
+   "sources": [
+    {
+     "asset": "aidevbench-1.0.0-src-windows-git-for-windows.tar",
+     "member": "windows/git-for-windows-pacman/mingw-w64-git-extra-1.1.715.85f886165-1.src.tar.gz"
+    },
+    {
+     "asset": "aidevbench-1.0.0-src-windows-git-for-windows.tar",
+     "member": "windows/git-for-windows/git-for-windows-build-extra-85f886165.tar.gz"
+    }
+   ]
+  },
+  "gfw-msys2-runtime": {
+   "name": "MSYS2 runtime (msys-2.0.dll, Git for Windows build)",
+   "version": "3.6.10-4",
+   "license": "LGPL-3.0-or-later (Cygwin) with parts under other licenses",
+   "obligation": "copyleft",
+   "platforms": {
+    "windows-arm64": 1,
+    "windows-x64": 2
+   },
+   "sources": [
+    {
+     "asset": "aidevbench-1.0.0-src-windows-git-for-windows.tar",
+     "member": "windows/git-for-windows-pacman/msys2-runtime-3.6.10-4.src.tar.gz"
+    }
+   ]
+  },
+  "gfw-openssl": {
+   "name": "OpenSSL (Git for Windows build)",
+   "version": "3.5.9-1",
+   "license": "Apache-2.0",
+   "obligation": "provided",
+   "platforms": {
+    "windows-arm64": 12
+   },
+   "sources": [
+    {
+     "asset": "aidevbench-1.0.0-src-windows-git-for-windows.tar",
+     "member": "windows/git-for-windows-pacman/mingw-w64-openssl-3.5.9-1.src.tar.gz"
+    }
+   ]
+  },
+  "linux-git": {
+   "name": "Git (built from source for the Linux runtime)",
+   "version": "2.56.0",
+   "license": "GPL-2.0-only",
+   "obligation": "copyleft",
+   "platforms": {
+    "linux-aarch64": 1,
+    "linux-x86_64": 1
+   },
+   "sources": [
+    {
+     "asset": "aidevbench-1.0.0-src-linux-git-2.56.0.tar",
+     "member": "linux/git/git-2.56.0.tar.xz"
+    },
+    {
+     "asset": "aidevbench-1.0.0-src-linux-git-2.56.0.tar",
+     "member": "linux/git/BUILD.md"
+    },
+    {
+     "asset": "aidevbench-1.0.0-src-linux-git-2.56.0.tar",
+     "member": "linux/git/GNU-BUILD.json"
+    }
+   ]
+  },
+  "macos-bash": {
+   "name": "GNU Bash (built from source for the macOS runtime)",
+   "version": "5.2.21 (bash-5.2 with patches 001-021)",
+   "license": "GPL-3.0-or-later",
+   "obligation": "copyleft",
+   "platforms": {
+    "macos-arm64": 15
+   },
+   "sources": [
+    {
+     "asset": "aidevbench-1.0.0-src-macos-gnu-tools.tar",
+     "member": "macos/gnu-tools/bash-5.2.tar.gz"
+    },
+    {
+     "asset": "aidevbench-1.0.0-src-macos-gnu-tools.tar",
+     "member": "macos/gnu-tools/bash-5.2-patches/"
+    },
+    {
+     "asset": "aidevbench-1.0.0-src-macos-gnu-tools.tar",
+     "member": "macos/gnu-tools/BUILD.md"
+    },
+    {
+     "asset": "aidevbench-1.0.0-src-macos-gnu-tools.tar",
+     "member": "macos/gnu-tools/logs/"
+    }
+   ]
+  },
+  "macos-coreutils": {
+   "name": "GNU coreutils (macOS: head, ls, nl, tr, touch)",
+   "version": "9.4 (lib/posixtm.c modified 2026-11-03)",
+   "license": "GPL-3.0-or-later",
+   "obligation": "copyleft",
+   "platforms": {
+    "macos-arm64": 5
+   },
+   "sources": [
+    {
+     "asset": "aidevbench-1.0.0-src-macos-gnu-tools.tar",
+     "member": "macos/gnu-tools/coreutils-9.4.tar.xz"
+    },
+    {
+     "asset": "aidevbench-1.0.0-src-macos-gnu-tools.tar",
+     "member": "macos/gnu-tools/coreutils-9.4-posixtm-ckd_add-int.patch"
+    },
+    {
+     "asset": "aidevbench-1.0.0-src-macos-gnu-tools.tar",
+     "member": "macos/gnu-tools/BUILD.md"
+    },
+    {
+     "asset": "aidevbench-1.0.0-src-macos-gnu-tools.tar",
+     "member": "macos/gnu-tools/logs/"
+    }
+   ]
+  },
+  "macos-git": {
+   "name": "Git (built from source for the macOS runtime)",
+   "version": "2.56.0",
+   "license": "GPL-2.0-only",
+   "obligation": "copyleft",
+   "platforms": {
+    "macos-arm64": 221
+   },
+   "sources": [
+    {
+     "asset": "aidevbench-1.0.0-src-macos-gnu-tools.tar",
+     "member": "macos/gnu-tools/git-2.56.0.tar.xz"
+    },
+    {
+     "asset": "aidevbench-1.0.0-src-macos-gnu-tools.tar",
+     "member": "macos/gnu-tools/BUILD.md"
+    },
+    {
+     "asset": "aidevbench-1.0.0-src-macos-gnu-tools.tar",
+     "member": "macos/gnu-tools/logs/"
+    }
+   ]
+  },
+  "macos-sed": {
+   "name": "GNU sed (built from source for the macOS runtime)",
+   "version": "4.9",
+   "license": "GPL-3.0-or-later",
+   "obligation": "copyleft",
+   "platforms": {
+    "macos-arm64": 1
+   },
+   "sources": [
+    {
+     "asset": "aidevbench-1.0.0-src-macos-gnu-tools.tar",
+     "member": "macos/gnu-tools/sed-4.9.tar.xz"
+    },
+    {
+     "asset": "aidevbench-1.0.0-src-macos-gnu-tools.tar",
+     "member": "macos/gnu-tools/BUILD.md"
+    },
+    {
+     "asset": "aidevbench-1.0.0-src-macos-gnu-tools.tar",
+     "member": "macos/gnu-tools/logs/"
+    }
+   ]
+  },
+  "macos-xz": {
+   "name": "liblzma of xz (built from source for the macOS runtime)",
+   "version": "5.8.1",
+   "license": "0BSD",
+   "obligation": "provided",
+   "platforms": {
+    "macos-arm64": 1
+   },
+   "sources": [
+    {
+     "asset": "aidevbench-1.0.0-src-macos-gnu-tools.tar",
+     "member": "macos/gnu-tools/xz-5.8.1.tar.gz"
+    },
+    {
+     "asset": "aidevbench-1.0.0-src-macos-gnu-tools.tar",
+     "member": "macos/gnu-tools/BUILD.md"
+    },
+    {
+     "asset": "aidevbench-1.0.0-src-macos-gnu-tools.tar",
+     "member": "macos/gnu-tools/logs/"
+    }
+   ]
+  },
+  "mingw-brotli": {
+   "name": "Brotli",
+   "version": "1.2.1-1",
+   "license": "MIT",
+   "obligation": "provided",
+   "platforms": {
+    "windows-arm64": 8
+   },
+   "sources": [
+    {
+     "asset": "aidevbench-1.0.0-src-windows-git-for-windows.tar",
+     "member": "windows/msys2-mingw-sources/mingw-w64-brotli-1.2.1-1.src.tar.zst"
+    }
+   ]
+  },
+  "mingw-docx2txt-rs": {
+   "name": "docx2txt-rs (docx2txt, docx-strip-pii)",
+   "version": "0.2.0-1",
+   "license": "GPL-3.0",
+   "obligation": "copyleft",
+   "platforms": {
+    "windows-arm64": 4
+   },
+   "sources": [
+    {
+     "asset": "aidevbench-1.0.0-src-windows-git-for-windows.tar",
+     "member": "windows/msys2-mingw-sources/mingw-w64-docx2txt-rs-0.2.0-1.src.tar.zst"
+    },
+    {
+     "asset": "aidevbench-1.0.0-src-windows-git-for-windows.tar",
+     "member": "windows/docx2txt-rs-crates/ (the 24 crates of its Cargo.lock, checksums verified)"
+    }
+   ]
+  },
+  "mingw-expat": {
+   "name": "Expat",
+   "version": "2.9.0-1",
+   "license": "MIT",
+   "obligation": "provided",
+   "platforms": {
+    "windows-arm64": 2
+   },
+   "sources": [
+    {
+     "asset": "aidevbench-1.0.0-src-windows-git-for-windows.tar",
+     "member": "windows/msys2-mingw-sources/mingw-w64-expat-2.9.0-1.src.tar.zst"
+    }
+   ]
+  },
+  "mingw-gettext": {
+   "name": "GNU gettext runtime (libintl-8.dll; printf_gettext/printf_ngettext)",
+   "version": "1.0-1",
+   "license": "LGPL-2.1-or-later (library), GPL-3.0-or-later (tools)",
+   "obligation": "copyleft",
+   "platforms": {
+    "windows-arm64": 7,
+    "windows-x64": 2
+   },
+   "sources": [
+    {
+     "asset": "aidevbench-1.0.0-src-windows-git-for-windows.tar",
+     "member": "windows/msys2-mingw-sources/mingw-w64-gettext-1.0-1.src.tar.zst"
+    }
+   ]
+  },
+  "mingw-libiconv": {
+   "name": "GNU libiconv (libiconv-2.dll)",
+   "version": "1.19-1",
+   "license": "LGPL-2.1-or-later",
+   "obligation": "copyleft",
+   "platforms": {
+    "windows-arm64": 3,
+    "windows-x64": 2
+   },
+   "sources": [
+    {
+     "asset": "aidevbench-1.0.0-src-windows-git-for-windows.tar",
+     "member": "windows/msys2-mingw-sources/mingw-w64-libiconv-1.19-1.src.tar.zst"
+    }
+   ]
+  },
+  "mingw-libidn2": {
+   "name": "GNU libidn2",
+   "version": "2.3.8-4",
+   "license": "LGPL-3.0-or-later OR GPL-2.0-or-later",
+   "obligation": "copyleft",
+   "platforms": {
+    "windows-arm64": 2
+   },
+   "sources": [
+    {
+     "asset": "aidevbench-1.0.0-src-windows-git-for-windows.tar",
+     "member": "windows/msys2-mingw-sources/mingw-w64-libidn2-2.3.8-4.src.tar.zst"
+    }
+   ]
+  },
+  "mingw-libpsl": {
+   "name": "libpsl",
+   "version": "0.21.5-3",
+   "license": "MIT",
+   "obligation": "provided",
+   "platforms": {
+    "windows-arm64": 4
+   },
+   "sources": [
+    {
+     "asset": "aidevbench-1.0.0-src-windows-git-for-windows.tar",
+     "member": "windows/msys2-mingw-sources/mingw-w64-libpsl-0.21.5-3.src.tar.zst"
+    }
+   ]
+  },
+  "mingw-libssh2": {
+   "name": "libssh2 (WinCNG build)",
+   "version": "1.11.1-2",
+   "license": "BSD-3-Clause",
+   "obligation": "provided",
+   "platforms": {
+    "windows-arm64": 2
+   },
+   "sources": [
+    {
+     "asset": "aidevbench-1.0.0-src-windows-git-for-windows.tar",
+     "member": "windows/msys2-mingw-sources/mingw-w64-libssh2-1.11.1-2.src.tar.zst"
+    }
+   ]
+  },
+  "mingw-libunistring": {
+   "name": "GNU libunistring",
+   "version": "1.4.2-1",
+   "license": "LGPL-3.0-or-later OR GPL-2.0-or-later",
+   "obligation": "copyleft",
+   "platforms": {
+    "windows-arm64": 2
+   },
+   "sources": [
+    {
+     "asset": "aidevbench-1.0.0-src-windows-git-for-windows.tar",
+     "member": "windows/msys2-mingw-sources/mingw-w64-libunistring-1.4.2-1.src.tar.zst"
+    }
+   ]
+  },
+  "mingw-nghttp2": {
+   "name": "nghttp2",
+   "version": "1.70.0-1",
+   "license": "MIT",
+   "obligation": "provided",
+   "platforms": {
+    "windows-arm64": 2
+   },
+   "sources": [
+    {
+     "asset": "aidevbench-1.0.0-src-windows-git-for-windows.tar",
+     "member": "windows/msys2-mingw-sources/mingw-w64-nghttp2-1.70.0-1.src.tar.zst"
+    }
+   ]
+  },
+  "mingw-pcre2": {
+   "name": "PCRE2",
+   "version": "10.49-1",
+   "license": "BSD-3-Clause",
+   "obligation": "provided",
+   "platforms": {
+    "windows-arm64": 3,
+    "windows-x64": 2
+   },
+   "sources": [
+    {
+     "asset": "aidevbench-1.0.0-src-windows-git-for-windows.tar",
+     "member": "windows/msys2-mingw-sources/mingw-w64-pcre2-10.49-1.src.tar.zst"
+    }
+   ]
+  },
+  "mingw-w64-sdk": {
+   "name": "llvm-mingw 20250709 Windows target SDK (mingw-w64 headers and CRT)",
+   "version": "mingw-w64 a0e69f7, llvm-mingw 20250709 (LLVM 20.1.8)",
+   "license": "ZPL-2.1, public domain, LGPL-2.1-or-later (Wine-derived headers), GPL (marked files)",
+   "obligation": "copyleft",
+   "platforms": {
+    "linux-aarch64": 5083,
+    "linux-x86_64": 5083,
+    "macos-arm64": 5083,
+    "windows-arm64": 5083,
+    "windows-x64": 5083
+   },
+   "sources": [
+    {
+     "asset": "aidevbench-1.0.0-src-mingw-w64-sdk.tar",
+     "member": "windows/llvm-mingw-sdk/mingw-w64-a0e69f7.tar.gz"
+    },
+    {
+     "asset": "aidevbench-1.0.0-src-mingw-w64-sdk.tar",
+     "member": "windows/llvm-mingw-sdk/llvm-mingw-20250709.tar.gz"
+    }
+   ]
+  },
+  "mingw-zlib": {
+   "name": "zlib",
+   "version": "1.3.2-3",
+   "license": "Zlib",
+   "obligation": "provided",
+   "platforms": {
+    "windows-arm64": 3,
+    "windows-x64": 2
+   },
+   "sources": [
+    {
+     "asset": "aidevbench-1.0.0-src-windows-git-for-windows.tar",
+     "member": "windows/msys2-mingw-sources/mingw-w64-zlib-1.3.2-3.src.tar.zst"
+    }
+   ]
+  },
+  "mingw-zstd": {
+   "name": "Zstandard",
+   "version": "1.5.7-2",
+   "license": "BSD-3-Clause",
+   "obligation": "provided",
+   "platforms": {
+    "windows-arm64": 2
+   },
+   "sources": [
+    {
+     "asset": "aidevbench-1.0.0-src-windows-git-for-windows.tar",
+     "member": "windows/msys2-mingw-sources/mingw-w64-zstd-1.5.7-2.src.tar.zst"
+    }
+   ]
+  },
+  "msys-coreutils": {
+   "name": "GNU coreutils (MSYS2: head, ls)",
+   "version": "8.32-5",
+   "license": "GPL-3.0-or-later",
+   "obligation": "copyleft",
+   "platforms": {
+    "windows-arm64": 2,
+    "windows-x64": 4
+   },
+   "sources": [
+    {
+     "asset": "aidevbench-1.0.0-src-windows-git-for-windows.tar",
+     "member": "windows/msys2-msys-sources/coreutils-8.32-5.src.tar.zst"
+    }
+   ]
+  },
+  "msys-gettext": {
+   "name": "GNU gettext libintl (MSYS2: msys-intl-8.dll)",
+   "version": "0.22.5-1",
+   "license": "LGPL-2.1-or-later",
+   "obligation": "copyleft",
+   "platforms": {
+    "windows-arm64": 1,
+    "windows-x64": 2
+   },
+   "sources": [
+    {
+     "asset": "aidevbench-1.0.0-src-windows-git-for-windows.tar",
+     "member": "windows/msys2-msys-sources/gettext-0.22.5-1.src.tar.zst"
+    }
+   ]
+  },
+  "msys-grep": {
+   "name": "GNU grep (MSYS2)",
+   "version": "1~3.0-7",
+   "license": "GPL-3.0-or-later",
+   "obligation": "copyleft",
+   "platforms": {
+    "windows-arm64": 1,
+    "windows-x64": 2
+   },
+   "sources": [
+    {
+     "asset": "aidevbench-1.0.0-src-windows-git-for-windows.tar",
+     "member": "windows/msys2-msys-sources/grep-1~3.0-7.src.tar.zst"
+    }
+   ]
+  },
+  "msys-libiconv": {
+   "name": "GNU libiconv (MSYS2: msys-iconv-2.dll)",
+   "version": "1.19-1",
+   "license": "LGPL-2.1-or-later",
+   "obligation": "copyleft",
+   "platforms": {
+    "windows-arm64": 1,
+    "windows-x64": 2
+   },
+   "sources": [
+    {
+     "asset": "aidevbench-1.0.0-src-windows-git-for-windows.tar",
+     "member": "windows/msys2-msys-sources/libiconv-1.19-1.src.tar.zst"
+    }
+   ]
+  },
+  "msys-pcre": {
+   "name": "PCRE (MSYS2: msys-pcre-1.dll)",
+   "version": "8.45-5",
+   "license": "BSD-3-Clause",
+   "obligation": "provided",
+   "platforms": {
+    "windows-arm64": 1,
+    "windows-x64": 2
+   },
+   "sources": [
+    {
+     "asset": "aidevbench-1.0.0-src-windows-git-for-windows.tar",
+     "member": "windows/msys2-msys-sources/pcre-8.45-5.src.tar.zst"
+    }
+   ]
+  },
+  "msys-sed": {
+   "name": "GNU sed (MSYS2)",
+   "version": "4.9-1",
+   "license": "GPL-3.0-or-later",
+   "obligation": "copyleft",
+   "platforms": {
+    "windows-arm64": 1,
+    "windows-x64": 2
+   },
+   "sources": [
+    {
+     "asset": "aidevbench-1.0.0-src-windows-git-for-windows.tar",
+     "member": "windows/msys2-msys-sources/sed-4.9-1.src.tar.zst"
+    }
+   ]
+  },
+  "ubuntu:acl": {
+   "name": "Ubuntu 24.04 source package acl",
+   "version": "2.3.2-1build1.1",
+   "license": "LGPL-2.1-or-later",
+   "obligation": "copyleft",
+   "platforms": {
+    "linux-aarch64": 2,
+    "linux-x86_64": 2
+   },
+   "sources": [
+    {
+     "asset": "aidevbench-1.0.0-src-linux-ubuntu-24.04.tar",
+     "member": "linux/ubuntu/acl/2.3.2-1build1.1/"
+    }
+   ]
+  },
+  "ubuntu:alsa-lib": {
+   "name": "Ubuntu 24.04 source package alsa-lib",
+   "version": "1.2.11-1ubuntu0.3",
+   "license": "LGPL-2.1-or-later",
+   "obligation": "copyleft",
+   "platforms": {
+    "linux-aarch64": 1,
+    "linux-x86_64": 1
+   },
+   "sources": [
+    {
+     "asset": "aidevbench-1.0.0-src-linux-ubuntu-24.04.tar",
+     "member": "linux/ubuntu/alsa-lib/1.2.11-1ubuntu0.3/"
+    }
+   ]
+  },
+  "ubuntu:at-spi2-core": {
+   "name": "Ubuntu 24.04 source package at-spi2-core",
+   "version": "2.52.0-1build1",
+   "license": "LGPL-2.1-or-later",
+   "obligation": "copyleft",
+   "platforms": {
+    "linux-aarch64": 3,
+    "linux-x86_64": 3
+   },
+   "sources": [
+    {
+     "asset": "aidevbench-1.0.0-src-linux-ubuntu-24.04.tar",
+     "member": "linux/ubuntu/at-spi2-core/2.52.0-1build1/"
+    }
+   ]
+  },
+  "ubuntu:avahi": {
+   "name": "Ubuntu 24.04 source package avahi",
+   "version": "0.8-13ubuntu6.2",
+   "license": "LGPL-2.1-or-later",
+   "obligation": "copyleft",
+   "platforms": {
+    "linux-aarch64": 2,
+    "linux-x86_64": 2
+   },
+   "sources": [
+    {
+     "asset": "aidevbench-1.0.0-src-linux-ubuntu-24.04.tar",
+     "member": "linux/ubuntu/avahi/0.8-13ubuntu6.2/"
+    }
+   ]
+  },
+  "ubuntu:bash": {
+   "name": "Ubuntu 24.04 source package bash",
+   "version": "5.2.21-2ubuntu4",
+   "license": "GPL-3.0-or-later",
+   "obligation": "copyleft",
+   "platforms": {
+    "linux-aarch64": 1,
+    "linux-x86_64": 1
+   },
+   "sources": [
+    {
+     "asset": "aidevbench-1.0.0-src-linux-ubuntu-24.04.tar",
+     "member": "linux/ubuntu/bash/5.2.21-2ubuntu4/"
+    }
+   ]
+  },
+  "ubuntu:binutils": {
+   "name": "Ubuntu 24.04 source package binutils",
+   "version": "2.42-4ubuntu2.10",
+   "license": "GPL-3.0-or-later",
+   "obligation": "copyleft",
+   "platforms": {
+    "linux-aarch64": 3,
+    "linux-x86_64": 3
+   },
+   "sources": [
+    {
+     "asset": "aidevbench-1.0.0-src-linux-ubuntu-24.04.tar",
+     "member": "linux/ubuntu/binutils/2.42-4ubuntu2.10/"
+    }
+   ]
+  },
+  "ubuntu:brotli": {
+   "name": "Ubuntu 24.04 source package brotli",
+   "version": "1.1.0-2build2, 1.1.0-2ubuntu0.1",
+   "license": "see debian/copyright (permissive)",
+   "obligation": "provided",
+   "platforms": {
+    "linux-aarch64": 2,
+    "linux-x86_64": 4
+   },
+   "sources": [
+    {
+     "asset": "aidevbench-1.0.0-src-linux-ubuntu-24.04.tar",
+     "member": "linux/ubuntu/brotli/1.1.0-2build2/"
+    },
+    {
+     "asset": "aidevbench-1.0.0-src-linux-ubuntu-24.04.tar",
+     "member": "linux/ubuntu/brotli/1.1.0-2ubuntu0.1/"
+    }
+   ]
+  },
+  "ubuntu:bzip2": {
+   "name": "Ubuntu 24.04 source package bzip2",
+   "version": "1.0.8-5.1ubuntu0.1",
+   "license": "see debian/copyright (permissive)",
+   "obligation": "provided",
+   "platforms": {
+    "linux-aarch64": 1,
+    "linux-x86_64": 2
+   },
+   "sources": [
+    {
+     "asset": "aidevbench-1.0.0-src-linux-ubuntu-24.04.tar",
+     "member": "linux/ubuntu/bzip2/1.0.8-5.1ubuntu0.1/"
+    }
+   ]
+  },
+  "ubuntu:cairo": {
+   "name": "Ubuntu 24.04 source package cairo",
+   "version": "1.18.0-3build1",
+   "license": "LGPL-2.1-only OR MPL-1.1",
+   "obligation": "copyleft",
+   "platforms": {
+    "linux-aarch64": 1,
+    "linux-x86_64": 1
+   },
+   "sources": [
+    {
+     "asset": "aidevbench-1.0.0-src-linux-ubuntu-24.04.tar",
+     "member": "linux/ubuntu/cairo/1.18.0-3build1/"
+    }
+   ]
+  },
+  "ubuntu:coreutils": {
+   "name": "Ubuntu 24.04 source package coreutils",
+   "version": "9.4-3ubuntu6.3",
+   "license": "GPL-3.0-or-later",
+   "obligation": "copyleft",
+   "platforms": {
+    "linux-aarch64": 4,
+    "linux-x86_64": 4
+   },
+   "sources": [
+    {
+     "asset": "aidevbench-1.0.0-src-linux-ubuntu-24.04.tar",
+     "member": "linux/ubuntu/coreutils/9.4-3ubuntu6.3/"
+    }
+   ]
+  },
+  "ubuntu:cups": {
+   "name": "Ubuntu 24.04 source package cups",
+   "version": "2.4.7-1.2ubuntu7.14",
+   "license": "see debian/copyright (permissive)",
+   "obligation": "provided",
+   "platforms": {
+    "linux-aarch64": 1,
+    "linux-x86_64": 1
+   },
+   "sources": [
+    {
+     "asset": "aidevbench-1.0.0-src-linux-ubuntu-24.04.tar",
+     "member": "linux/ubuntu/cups/2.4.7-1.2ubuntu7.14/"
+    }
+   ]
+  },
+  "ubuntu:dbus": {
+   "name": "Ubuntu 24.04 source package dbus",
+   "version": "1.14.10-4ubuntu4.1",
+   "license": "see debian/copyright (permissive)",
+   "obligation": "provided",
+   "platforms": {
+    "linux-aarch64": 1,
+    "linux-x86_64": 1
+   },
+   "sources": [
+    {
+     "asset": "aidevbench-1.0.0-src-linux-ubuntu-24.04.tar",
+     "member": "linux/ubuntu/dbus/1.14.10-4ubuntu4.1/"
+    }
+   ]
+  },
+  "ubuntu:e2fsprogs": {
+   "name": "Ubuntu 24.04 source package e2fsprogs",
+   "version": "1.47.0-2.4~exp1ubuntu4.1",
+   "license": "see debian/copyright (permissive)",
+   "obligation": "provided",
+   "platforms": {
+    "linux-aarch64": 1,
+    "linux-x86_64": 1
+   },
+   "sources": [
+    {
+     "asset": "aidevbench-1.0.0-src-linux-ubuntu-24.04.tar",
+     "member": "linux/ubuntu/e2fsprogs/1.47.0-2.4~exp1ubuntu4.1/"
+    }
+   ]
+  },
+  "ubuntu:expat": {
+   "name": "Ubuntu 24.04 source package expat",
+   "version": "2.6.1-2ubuntu0.6",
+   "license": "see debian/copyright (permissive)",
+   "obligation": "provided",
+   "platforms": {
+    "linux-aarch64": 1,
+    "linux-x86_64": 2
+   },
+   "sources": [
+    {
+     "asset": "aidevbench-1.0.0-src-linux-ubuntu-24.04.tar",
+     "member": "linux/ubuntu/expat/2.6.1-2ubuntu0.6/"
+    }
+   ]
+  },
+  "ubuntu:fontconfig": {
+   "name": "Ubuntu 24.04 source package fontconfig",
+   "version": "2.15.0-1.1ubuntu2",
+   "license": "see debian/copyright (permissive)",
+   "obligation": "provided",
+   "platforms": {
+    "linux-aarch64": 1,
+    "linux-x86_64": 2
+   },
+   "sources": [
+    {
+     "asset": "aidevbench-1.0.0-src-linux-ubuntu-24.04.tar",
+     "member": "linux/ubuntu/fontconfig/2.15.0-1.1ubuntu2/"
+    }
+   ]
+  },
+  "ubuntu:fonts-dejavu": {
+   "name": "Ubuntu 24.04 source package fonts-dejavu",
+   "version": "2.37-8",
+   "license": "see debian/copyright (permissive)",
+   "obligation": "provided",
+   "platforms": {
+    "linux-aarch64": 2,
+    "linux-x86_64": 2
+   },
+   "sources": [
+    {
+     "asset": "aidevbench-1.0.0-src-linux-ubuntu-24.04.tar",
+     "member": "linux/ubuntu/fonts-dejavu/2.37-8/"
+    }
+   ]
+  },
+  "ubuntu:fonts-noto-cjk": {
+   "name": "Ubuntu 24.04 source package fonts-noto-cjk",
+   "version": "1:20230817+repack1-3",
+   "license": "see debian/copyright (permissive)",
+   "obligation": "provided",
+   "platforms": {
+    "linux-aarch64": 2,
+    "linux-x86_64": 2
+   },
+   "sources": [
+    {
+     "asset": "aidevbench-1.0.0-src-linux-ubuntu-24.04.tar",
+     "member": "linux/ubuntu/fonts-noto-cjk/1%3a20230817+repack1-3/"
+    }
+   ]
+  },
+  "ubuntu:freetype": {
+   "name": "Ubuntu 24.04 source package freetype",
+   "version": "2.13.2+dfsg-1ubuntu0.2",
+   "license": "see debian/copyright (permissive)",
+   "obligation": "provided",
+   "platforms": {
+    "linux-aarch64": 1,
+    "linux-x86_64": 2
+   },
+   "sources": [
+    {
+     "asset": "aidevbench-1.0.0-src-linux-ubuntu-24.04.tar",
+     "member": "linux/ubuntu/freetype/2.13.2+dfsg-1ubuntu0.2/"
+    }
+   ]
+  },
+  "ubuntu:fribidi": {
+   "name": "Ubuntu 24.04 source package fribidi",
+   "version": "1.0.13-3build1",
+   "license": "LGPL-2.1-or-later",
+   "obligation": "copyleft",
+   "platforms": {
+    "linux-aarch64": 1,
+    "linux-x86_64": 1
+   },
+   "sources": [
+    {
+     "asset": "aidevbench-1.0.0-src-linux-ubuntu-24.04.tar",
+     "member": "linux/ubuntu/fribidi/1.0.13-3build1/"
+    }
+   ]
+  },
+  "ubuntu:gcc-14": {
+   "name": "Ubuntu 24.04 source package gcc-14",
+   "version": "14.2.0-4ubuntu2~24.04.1",
+   "license": "GPL-3.0-or-later WITH GCC-exception-3.1",
+   "obligation": "copyleft",
+   "platforms": {
+    "linux-aarch64": 8,
+    "linux-x86_64": 8
+   },
+   "sources": [
+    {
+     "asset": "aidevbench-1.0.0-src-linux-ubuntu-24.04.tar",
+     "member": "linux/ubuntu/gcc-14/14.2.0-4ubuntu2~24.04.1/"
+    }
+   ]
+  },
+  "ubuntu:glib2.0": {
+   "name": "Ubuntu 24.04 source package glib2.0",
+   "version": "2.80.0-6ubuntu3.10",
+   "license": "LGPL-2.1-or-later",
+   "obligation": "copyleft",
+   "platforms": {
+    "linux-aarch64": 4,
+    "linux-x86_64": 4
+   },
+   "sources": [
+    {
+     "asset": "aidevbench-1.0.0-src-linux-ubuntu-24.04.tar",
+     "member": "linux/ubuntu/glib2.0/2.80.0-6ubuntu3.10/"
+    }
+   ]
+  },
+  "ubuntu:glibc": {
+   "name": "Ubuntu 24.04 source package glibc",
+   "version": "2.39-0ubuntu8.9",
+   "license": "LGPL-2.1-or-later",
+   "obligation": "copyleft",
+   "platforms": {
+    "linux-aarch64": 27,
+    "linux-x86_64": 27
+   },
+   "sources": [
+    {
+     "asset": "aidevbench-1.0.0-src-linux-ubuntu-24.04.tar",
+     "member": "linux/ubuntu/glibc/2.39-0ubuntu8.9/"
+    }
+   ]
+  },
+  "ubuntu:gmp": {
+   "name": "Ubuntu 24.04 source package gmp",
+   "version": "2:6.3.0+dfsg-2ubuntu6.1",
+   "license": "LGPL-3.0-or-later OR GPL-2.0-or-later",
+   "obligation": "copyleft",
+   "platforms": {
+    "linux-aarch64": 1,
+    "linux-x86_64": 1
+   },
+   "sources": [
+    {
+     "asset": "aidevbench-1.0.0-src-linux-ubuntu-24.04.tar",
+     "member": "linux/ubuntu/gmp/2%3a6.3.0+dfsg-2ubuntu6.1/"
+    }
+   ]
+  },
+  "ubuntu:gnutls28": {
+   "name": "Ubuntu 24.04 source package gnutls28",
+   "version": "3.8.3-1.1ubuntu3.6",
+   "license": "LGPL-2.1-or-later",
+   "obligation": "copyleft",
+   "platforms": {
+    "linux-aarch64": 1,
+    "linux-x86_64": 1
+   },
+   "sources": [
+    {
+     "asset": "aidevbench-1.0.0-src-linux-ubuntu-24.04.tar",
+     "member": "linux/ubuntu/gnutls28/3.8.3-1.1ubuntu3.6/"
+    }
+   ]
+  },
+  "ubuntu:graphite2": {
+   "name": "Ubuntu 24.04 source package graphite2",
+   "version": "1.3.14-2ubuntu0.24.04.1",
+   "license": "LGPL-2.1-or-later OR MPL-1.1 OR GPL-2.0-or-later",
+   "obligation": "copyleft",
+   "platforms": {
+    "linux-aarch64": 1,
+    "linux-x86_64": 1
+   },
+   "sources": [
+    {
+     "asset": "aidevbench-1.0.0-src-linux-ubuntu-24.04.tar",
+     "member": "linux/ubuntu/graphite2/1.3.14-2ubuntu0.24.04.1/"
+    }
+   ]
+  },
+  "ubuntu:harfbuzz": {
+   "name": "Ubuntu 24.04 source package harfbuzz",
+   "version": "8.3.0-2build2",
+   "license": "see debian/copyright (permissive)",
+   "obligation": "provided",
+   "platforms": {
+    "linux-aarch64": 1,
+    "linux-x86_64": 1
+   },
+   "sources": [
+    {
+     "asset": "aidevbench-1.0.0-src-linux-ubuntu-24.04.tar",
+     "member": "linux/ubuntu/harfbuzz/8.3.0-2build2/"
+    }
+   ]
+  },
+  "ubuntu:icu": {
+   "name": "Ubuntu 24.04 source package icu",
+   "version": "74.2-1ubuntu3.1",
+   "license": "see debian/copyright (permissive)",
+   "obligation": "provided",
+   "platforms": {
+    "linux-aarch64": 2,
+    "linux-x86_64": 2
+   },
+   "sources": [
+    {
+     "asset": "aidevbench-1.0.0-src-linux-ubuntu-24.04.tar",
+     "member": "linux/ubuntu/icu/74.2-1ubuntu3.1/"
+    }
+   ]
+  },
+  "ubuntu:keyutils": {
+   "name": "Ubuntu 24.04 source package keyutils",
+   "version": "1.6.3-3build1",
+   "license": "LGPL-2.0-or-later",
+   "obligation": "copyleft",
+   "platforms": {
+    "linux-aarch64": 1,
+    "linux-x86_64": 1
+   },
+   "sources": [
+    {
+     "asset": "aidevbench-1.0.0-src-linux-ubuntu-24.04.tar",
+     "member": "linux/ubuntu/keyutils/1.6.3-3build1/"
+    }
+   ]
+  },
+  "ubuntu:krb5": {
+   "name": "Ubuntu 24.04 source package krb5",
+   "version": "1.20.1-6ubuntu2.10",
+   "license": "see debian/copyright (permissive)",
+   "obligation": "provided",
+   "platforms": {
+    "linux-aarch64": 4,
+    "linux-x86_64": 4
+   },
+   "sources": [
+    {
+     "asset": "aidevbench-1.0.0-src-linux-ubuntu-24.04.tar",
+     "member": "linux/ubuntu/krb5/1.20.1-6ubuntu2.10/"
+    }
+   ]
+  },
+  "ubuntu:libbsd": {
+   "name": "Ubuntu 24.04 source package libbsd",
+   "version": "0.12.1-1build1.1",
+   "license": "see debian/copyright (permissive)",
+   "obligation": "provided",
+   "platforms": {
+    "linux-aarch64": 1,
+    "linux-x86_64": 2
+   },
+   "sources": [
+    {
+     "asset": "aidevbench-1.0.0-src-linux-ubuntu-24.04.tar",
+     "member": "linux/ubuntu/libbsd/0.12.1-1build1.1/"
+    }
+   ]
+  },
+  "ubuntu:libcap2": {
+   "name": "Ubuntu 24.04 source package libcap2",
+   "version": "1:2.66-5ubuntu2.4",
+   "license": "see debian/copyright (permissive)",
+   "obligation": "provided",
+   "platforms": {
+    "linux-aarch64": 1,
+    "linux-x86_64": 1
+   },
+   "sources": [
+    {
+     "asset": "aidevbench-1.0.0-src-linux-ubuntu-24.04.tar",
+     "member": "linux/ubuntu/libcap2/1%3a2.66-5ubuntu2.4/"
+    }
+   ]
+  },
+  "ubuntu:libdatrie": {
+   "name": "Ubuntu 24.04 source package libdatrie",
+   "version": "0.2.13-3build1",
+   "license": "LGPL-2.1-or-later",
+   "obligation": "copyleft",
+   "platforms": {
+    "linux-aarch64": 1,
+    "linux-x86_64": 1
+   },
+   "sources": [
+    {
+     "asset": "aidevbench-1.0.0-src-linux-ubuntu-24.04.tar",
+     "member": "linux/ubuntu/libdatrie/0.2.13-3build1/"
+    }
+   ]
+  },
+  "ubuntu:libdrm": {
+   "name": "Ubuntu 24.04 source package libdrm",
+   "version": "2.4.125-1ubuntu0.1~24.04.2",
+   "license": "see debian/copyright (permissive)",
+   "obligation": "provided",
+   "platforms": {
+    "linux-aarch64": 1,
+    "linux-x86_64": 1
+   },
+   "sources": [
+    {
+     "asset": "aidevbench-1.0.0-src-linux-ubuntu-24.04.tar",
+     "member": "linux/ubuntu/libdrm/2.4.125-1ubuntu0.1~24.04.2/"
+    }
+   ]
+  },
+  "ubuntu:libffi": {
+   "name": "Ubuntu 24.04 source package libffi",
+   "version": "3.4.6-1build1",
+   "license": "see debian/copyright (permissive)",
+   "obligation": "provided",
+   "platforms": {
+    "linux-aarch64": 1,
+    "linux-x86_64": 1
+   },
+   "sources": [
+    {
+     "asset": "aidevbench-1.0.0-src-linux-ubuntu-24.04.tar",
+     "member": "linux/ubuntu/libffi/3.4.6-1build1/"
+    }
+   ]
+  },
+  "ubuntu:libgcrypt20": {
+   "name": "Ubuntu 24.04 source package libgcrypt20",
+   "version": "1.10.3-2ubuntu0.2",
+   "license": "LGPL-2.1-or-later",
+   "obligation": "copyleft",
+   "platforms": {
+    "linux-aarch64": 1,
+    "linux-x86_64": 1
+   },
+   "sources": [
+    {
+     "asset": "aidevbench-1.0.0-src-linux-ubuntu-24.04.tar",
+     "member": "linux/ubuntu/libgcrypt20/1.10.3-2ubuntu0.2/"
+    }
+   ]
+  },
+  "ubuntu:libgpg-error": {
+   "name": "Ubuntu 24.04 source package libgpg-error",
+   "version": "1.47-3build2.1",
+   "license": "LGPL-2.1-or-later",
+   "obligation": "copyleft",
+   "platforms": {
+    "linux-aarch64": 1,
+    "linux-x86_64": 1
+   },
+   "sources": [
+    {
+     "asset": "aidevbench-1.0.0-src-linux-ubuntu-24.04.tar",
+     "member": "linux/ubuntu/libgpg-error/1.47-3build2.1/"
+    }
+   ]
+  },
+  "ubuntu:libidn2": {
+   "name": "Ubuntu 24.04 source package libidn2",
+   "version": "2.3.7-2build1.1",
+   "license": "LGPL-3.0-or-later OR GPL-2.0-or-later",
+   "obligation": "copyleft",
+   "platforms": {
+    "linux-aarch64": 1,
+    "linux-x86_64": 1
+   },
+   "sources": [
+    {
+     "asset": "aidevbench-1.0.0-src-linux-ubuntu-24.04.tar",
+     "member": "linux/ubuntu/libidn2/2.3.7-2build1.1/"
+    }
+   ]
+  },
+  "ubuntu:libmd": {
+   "name": "Ubuntu 24.04 source package libmd",
+   "version": "1.1.0-2build1.1",
+   "license": "see debian/copyright (permissive)",
+   "obligation": "provided",
+   "platforms": {
+    "linux-aarch64": 1,
+    "linux-x86_64": 2
+   },
+   "sources": [
+    {
+     "asset": "aidevbench-1.0.0-src-linux-ubuntu-24.04.tar",
+     "member": "linux/ubuntu/libmd/1.1.0-2build1.1/"
+    }
+   ]
+  },
+  "ubuntu:libpng1.6": {
+   "name": "Ubuntu 24.04 source package libpng1.6",
+   "version": "1.6.43-5ubuntu0.7",
+   "license": "see debian/copyright (permissive)",
+   "obligation": "provided",
+   "platforms": {
+    "linux-aarch64": 1,
+    "linux-x86_64": 2
+   },
+   "sources": [
+    {
+     "asset": "aidevbench-1.0.0-src-linux-ubuntu-24.04.tar",
+     "member": "linux/ubuntu/libpng1.6/1.6.43-5ubuntu0.7/"
+    }
+   ]
+  },
+  "ubuntu:libselinux": {
+   "name": "Ubuntu 24.04 source package libselinux",
+   "version": "3.5-2ubuntu2.1",
+   "license": "see debian/copyright (permissive)",
+   "obligation": "provided",
+   "platforms": {
+    "linux-aarch64": 3,
+    "linux-x86_64": 3
+   },
+   "sources": [
+    {
+     "asset": "aidevbench-1.0.0-src-linux-ubuntu-24.04.tar",
+     "member": "linux/ubuntu/libselinux/3.5-2ubuntu2.1/"
+    }
+   ]
+  },
+  "ubuntu:libtasn1-6": {
+   "name": "Ubuntu 24.04 source package libtasn1-6",
+   "version": "4.19.0-3ubuntu0.24.04.2",
+   "license": "LGPL-2.1-or-later",
+   "obligation": "copyleft",
+   "platforms": {
+    "linux-aarch64": 1,
+    "linux-x86_64": 1
+   },
+   "sources": [
+    {
+     "asset": "aidevbench-1.0.0-src-linux-ubuntu-24.04.tar",
+     "member": "linux/ubuntu/libtasn1-6/4.19.0-3ubuntu0.24.04.2/"
+    }
+   ]
+  },
+  "ubuntu:libthai": {
+   "name": "Ubuntu 24.04 source package libthai",
+   "version": "0.1.29-2build1",
+   "license": "LGPL-2.1-or-later",
+   "obligation": "copyleft",
+   "platforms": {
+    "linux-aarch64": 1,
+    "linux-x86_64": 1
+   },
+   "sources": [
+    {
+     "asset": "aidevbench-1.0.0-src-linux-ubuntu-24.04.tar",
+     "member": "linux/ubuntu/libthai/0.1.29-2build1/"
+    }
+   ]
+  },
+  "ubuntu:libunistring": {
+   "name": "Ubuntu 24.04 source package libunistring",
+   "version": "1.1-2build1.1",
+   "license": "LGPL-3.0-or-later OR GPL-2.0-or-later",
+   "obligation": "copyleft",
+   "platforms": {
+    "linux-aarch64": 1,
+    "linux-x86_64": 1
+   },
+   "sources": [
+    {
+     "asset": "aidevbench-1.0.0-src-linux-ubuntu-24.04.tar",
+     "member": "linux/ubuntu/libunistring/1.1-2build1.1/"
+    }
+   ]
+  },
+  "ubuntu:libx11": {
+   "name": "Ubuntu 24.04 source package libx11",
+   "version": "2:1.8.7-1ubuntu0.1",
+   "license": "see debian/copyright (permissive)",
+   "obligation": "provided",
+   "platforms": {
+    "linux-aarch64": 2,
+    "linux-x86_64": 3
+   },
+   "sources": [
+    {
+     "asset": "aidevbench-1.0.0-src-linux-ubuntu-24.04.tar",
+     "member": "linux/ubuntu/libx11/2%3a1.8.7-1ubuntu0.1/"
+    }
+   ]
+  },
+  "ubuntu:libxau": {
+   "name": "Ubuntu 24.04 source package libxau",
+   "version": "1:1.0.9-1build6",
+   "license": "see debian/copyright (permissive)",
+   "obligation": "provided",
+   "platforms": {
+    "linux-aarch64": 1,
+    "linux-x86_64": 2
+   },
+   "sources": [
+    {
+     "asset": "aidevbench-1.0.0-src-linux-ubuntu-24.04.tar",
+     "member": "linux/ubuntu/libxau/1%3a1.0.9-1build6/"
+    }
+   ]
+  },
+  "ubuntu:libxcb": {
+   "name": "Ubuntu 24.04 source package libxcb",
+   "version": "1.15-1ubuntu2",
+   "license": "see debian/copyright (permissive)",
+   "obligation": "provided",
+   "platforms": {
+    "linux-aarch64": 3,
+    "linux-x86_64": 4
+   },
+   "sources": [
+    {
+     "asset": "aidevbench-1.0.0-src-linux-ubuntu-24.04.tar",
+     "member": "linux/ubuntu/libxcb/1.15-1ubuntu2/"
+    }
+   ]
+  },
+  "ubuntu:libxcomposite": {
+   "name": "Ubuntu 24.04 source package libxcomposite",
+   "version": "1:0.4.5-1build3",
+   "license": "see debian/copyright (permissive)",
+   "obligation": "provided",
+   "platforms": {
+    "linux-aarch64": 1,
+    "linux-x86_64": 1
+   },
+   "sources": [
+    {
+     "asset": "aidevbench-1.0.0-src-linux-ubuntu-24.04.tar",
+     "member": "linux/ubuntu/libxcomposite/1%3a0.4.5-1build3/"
+    }
+   ]
+  },
+  "ubuntu:libxdamage": {
+   "name": "Ubuntu 24.04 source package libxdamage",
+   "version": "1:1.1.6-1build1",
+   "license": "see debian/copyright (permissive)",
+   "obligation": "provided",
+   "platforms": {
+    "linux-aarch64": 1,
+    "linux-x86_64": 1
+   },
+   "sources": [
+    {
+     "asset": "aidevbench-1.0.0-src-linux-ubuntu-24.04.tar",
+     "member": "linux/ubuntu/libxdamage/1%3a1.1.6-1build1/"
+    }
+   ]
+  },
+  "ubuntu:libxdmcp": {
+   "name": "Ubuntu 24.04 source package libxdmcp",
+   "version": "1:1.1.3-0ubuntu6",
+   "license": "see debian/copyright (permissive)",
+   "obligation": "provided",
+   "platforms": {
+    "linux-aarch64": 1,
+    "linux-x86_64": 2
+   },
+   "sources": [
+    {
+     "asset": "aidevbench-1.0.0-src-linux-ubuntu-24.04.tar",
+     "member": "linux/ubuntu/libxdmcp/1%3a1.1.3-0ubuntu6/"
+    }
+   ]
+  },
+  "ubuntu:libxext": {
+   "name": "Ubuntu 24.04 source package libxext",
+   "version": "2:1.3.4-1build2",
+   "license": "see debian/copyright (permissive)",
+   "obligation": "provided",
+   "platforms": {
+    "linux-aarch64": 1,
+    "linux-x86_64": 1
+   },
+   "sources": [
+    {
+     "asset": "aidevbench-1.0.0-src-linux-ubuntu-24.04.tar",
+     "member": "linux/ubuntu/libxext/2%3a1.3.4-1build2/"
+    }
+   ]
+  },
+  "ubuntu:libxfixes": {
+   "name": "Ubuntu 24.04 source package libxfixes",
+   "version": "1:6.0.0-2build1",
+   "license": "see debian/copyright (permissive)",
+   "obligation": "provided",
+   "platforms": {
+    "linux-aarch64": 1,
+    "linux-x86_64": 1
+   },
+   "sources": [
+    {
+     "asset": "aidevbench-1.0.0-src-linux-ubuntu-24.04.tar",
+     "member": "linux/ubuntu/libxfixes/1%3a6.0.0-2build1/"
+    }
+   ]
+  },
+  "ubuntu:libxi": {
+   "name": "Ubuntu 24.04 source package libxi",
+   "version": "2:1.8.1-1build1",
+   "license": "see debian/copyright (permissive)",
+   "obligation": "provided",
+   "platforms": {
+    "linux-aarch64": 1,
+    "linux-x86_64": 1
+   },
+   "sources": [
+    {
+     "asset": "aidevbench-1.0.0-src-linux-ubuntu-24.04.tar",
+     "member": "linux/ubuntu/libxi/2%3a1.8.1-1build1/"
+    }
+   ]
+  },
+  "ubuntu:libxkbcommon": {
+   "name": "Ubuntu 24.04 source package libxkbcommon",
+   "version": "1.6.0-1build1",
+   "license": "see debian/copyright (permissive)",
+   "obligation": "provided",
+   "platforms": {
+    "linux-aarch64": 1,
+    "linux-x86_64": 1
+   },
+   "sources": [
+    {
+     "asset": "aidevbench-1.0.0-src-linux-ubuntu-24.04.tar",
+     "member": "linux/ubuntu/libxkbcommon/1.6.0-1build1/"
+    }
+   ]
+  },
+  "ubuntu:libxml2": {
+   "name": "Ubuntu 24.04 source package libxml2",
+   "version": "2.9.14+dfsg-1.3ubuntu3.10",
+   "license": "see debian/copyright (permissive)",
+   "obligation": "provided",
+   "platforms": {
+    "linux-aarch64": 1,
+    "linux-x86_64": 1
+   },
+   "sources": [
+    {
+     "asset": "aidevbench-1.0.0-src-linux-ubuntu-24.04.tar",
+     "member": "linux/ubuntu/libxml2/2.9.14+dfsg-1.3ubuntu3.10/"
+    }
+   ]
+  },
+  "ubuntu:libxrandr": {
+   "name": "Ubuntu 24.04 source package libxrandr",
+   "version": "2:1.5.2-2build1",
+   "license": "see debian/copyright (permissive)",
+   "obligation": "provided",
+   "platforms": {
+    "linux-aarch64": 1,
+    "linux-x86_64": 1
+   },
+   "sources": [
+    {
+     "asset": "aidevbench-1.0.0-src-linux-ubuntu-24.04.tar",
+     "member": "linux/ubuntu/libxrandr/2%3a1.5.2-2build1/"
+    }
+   ]
+  },
+  "ubuntu:libxrender": {
+   "name": "Ubuntu 24.04 source package libxrender",
+   "version": "1:0.9.10-1.1build1",
+   "license": "see debian/copyright (permissive)",
+   "obligation": "provided",
+   "platforms": {
+    "linux-aarch64": 1,
+    "linux-x86_64": 2
+   },
+   "sources": [
+    {
+     "asset": "aidevbench-1.0.0-src-linux-ubuntu-24.04.tar",
+     "member": "linux/ubuntu/libxrender/1%3a0.9.10-1.1build1/"
+    }
+   ]
+  },
+  "ubuntu:libzstd": {
+   "name": "Ubuntu 24.04 source package libzstd",
+   "version": "1.5.5+dfsg2-2build1.1",
+   "license": "see debian/copyright (permissive)",
+   "obligation": "provided",
+   "platforms": {
+    "linux-aarch64": 2,
+    "linux-x86_64": 2
+   },
+   "sources": [
+    {
+     "asset": "aidevbench-1.0.0-src-linux-ubuntu-24.04.tar",
+     "member": "linux/ubuntu/libzstd/1.5.5+dfsg2-2build1.1/"
+    }
+   ]
+  },
+  "ubuntu:lz4": {
+   "name": "Ubuntu 24.04 source package lz4",
+   "version": "1.9.4-1build1.1",
+   "license": "see debian/copyright (permissive)",
+   "obligation": "provided",
+   "platforms": {
+    "linux-aarch64": 1,
+    "linux-x86_64": 1
+   },
+   "sources": [
+    {
+     "asset": "aidevbench-1.0.0-src-linux-ubuntu-24.04.tar",
+     "member": "linux/ubuntu/lz4/1.9.4-1build1.1/"
+    }
+   ]
+  },
+  "ubuntu:mesa": {
+   "name": "Ubuntu 24.04 source package mesa",
+   "version": "25.2.8-0ubuntu0.24.04.4",
+   "license": "see debian/copyright (permissive)",
+   "obligation": "provided",
+   "platforms": {
+    "linux-aarch64": 1,
+    "linux-x86_64": 1
+   },
+   "sources": [
+    {
+     "asset": "aidevbench-1.0.0-src-linux-ubuntu-24.04.tar",
+     "member": "linux/ubuntu/mesa/25.2.8-0ubuntu0.24.04.4/"
+    }
+   ]
+  },
+  "ubuntu:ncurses": {
+   "name": "Ubuntu 24.04 source package ncurses",
+   "version": "6.4+20240113-1ubuntu2.2",
+   "license": "see debian/copyright (permissive)",
+   "obligation": "provided",
+   "platforms": {
+    "linux-aarch64": 2,
+    "linux-x86_64": 2
+   },
+   "sources": [
+    {
+     "asset": "aidevbench-1.0.0-src-linux-ubuntu-24.04.tar",
+     "member": "linux/ubuntu/ncurses/6.4+20240113-1ubuntu2.2/"
+    }
+   ]
+  },
+  "ubuntu:nettle": {
+   "name": "Ubuntu 24.04 source package nettle",
+   "version": "3.9.1-2.2build1.1",
+   "license": "LGPL-3.0-or-later OR GPL-2.0-or-later",
+   "obligation": "copyleft",
+   "platforms": {
+    "linux-aarch64": 2,
+    "linux-x86_64": 2
+   },
+   "sources": [
+    {
+     "asset": "aidevbench-1.0.0-src-linux-ubuntu-24.04.tar",
+     "member": "linux/ubuntu/nettle/3.9.1-2.2build1.1/"
+    }
+   ]
+  },
+  "ubuntu:nspr": {
+   "name": "Ubuntu 24.04 source package nspr",
+   "version": "2:4.35-1.1build1",
+   "license": "MPL-2.0",
+   "obligation": "copyleft",
+   "platforms": {
+    "linux-aarch64": 3,
+    "linux-x86_64": 3
+   },
+   "sources": [
+    {
+     "asset": "aidevbench-1.0.0-src-linux-ubuntu-24.04.tar",
+     "member": "linux/ubuntu/nspr/2%3a4.35-1.1build1/"
+    }
+   ]
+  },
+  "ubuntu:nss": {
+   "name": "Ubuntu 24.04 source package nss",
+   "version": "2:3.98-1ubuntu0.3",
+   "license": "MPL-2.0",
+   "obligation": "copyleft",
+   "platforms": {
+    "linux-aarch64": 9,
+    "linux-x86_64": 9
+   },
+   "sources": [
+    {
+     "asset": "aidevbench-1.0.0-src-linux-ubuntu-24.04.tar",
+     "member": "linux/ubuntu/nss/2%3a3.98-1ubuntu0.3/"
+    }
+   ]
+  },
+  "ubuntu:p11-kit": {
+   "name": "Ubuntu 24.04 source package p11-kit",
+   "version": "0.25.3-4ubuntu2.2",
+   "license": "see debian/copyright (permissive)",
+   "obligation": "provided",
+   "platforms": {
+    "linux-aarch64": 1,
+    "linux-x86_64": 1
+   },
+   "sources": [
+    {
+     "asset": "aidevbench-1.0.0-src-linux-ubuntu-24.04.tar",
+     "member": "linux/ubuntu/p11-kit/0.25.3-4ubuntu2.2/"
+    }
+   ]
+  },
+  "ubuntu:pango1.0": {
+   "name": "Ubuntu 24.04 source package pango1.0",
+   "version": "1.52.1+ds-1build1",
+   "license": "LGPL-2.1-or-later",
+   "obligation": "copyleft",
+   "platforms": {
+    "linux-aarch64": 1,
+    "linux-x86_64": 1
+   },
+   "sources": [
+    {
+     "asset": "aidevbench-1.0.0-src-linux-ubuntu-24.04.tar",
+     "member": "linux/ubuntu/pango1.0/1.52.1+ds-1build1/"
+    }
+   ]
+  },
+  "ubuntu:pcre2": {
+   "name": "Ubuntu 24.04 source package pcre2",
+   "version": "10.42-4ubuntu2.1",
+   "license": "see debian/copyright (permissive)",
+   "obligation": "provided",
+   "platforms": {
+    "linux-aarch64": 3,
+    "linux-x86_64": 3
+   },
+   "sources": [
+    {
+     "asset": "aidevbench-1.0.0-src-linux-ubuntu-24.04.tar",
+     "member": "linux/ubuntu/pcre2/10.42-4ubuntu2.1/"
+    }
+   ]
+  },
+  "ubuntu:pixman": {
+   "name": "Ubuntu 24.04 source package pixman",
+   "version": "0.42.2-1build1",
+   "license": "see debian/copyright (permissive)",
+   "obligation": "provided",
+   "platforms": {
+    "linux-aarch64": 1,
+    "linux-x86_64": 1
+   },
+   "sources": [
+    {
+     "asset": "aidevbench-1.0.0-src-linux-ubuntu-24.04.tar",
+     "member": "linux/ubuntu/pixman/0.42.2-1build1/"
+    }
+   ]
+  },
+  "ubuntu:sed": {
+   "name": "Ubuntu 24.04 source package sed",
+   "version": "4.9-2ubuntu0.24.04.1",
+   "license": "GPL-3.0-or-later",
+   "obligation": "copyleft",
+   "platforms": {
+    "linux-aarch64": 1,
+    "linux-x86_64": 1
+   },
+   "sources": [
+    {
+     "asset": "aidevbench-1.0.0-src-linux-ubuntu-24.04.tar",
+     "member": "linux/ubuntu/sed/4.9-2ubuntu0.24.04.1/"
+    }
+   ]
+  },
+  "ubuntu:systemd": {
+   "name": "Ubuntu 24.04 source package systemd",
+   "version": "255.4-1ubuntu8.18",
+   "license": "LGPL-2.1-or-later",
+   "obligation": "copyleft",
+   "platforms": {
+    "linux-aarch64": 2,
+    "linux-x86_64": 2
+   },
+   "sources": [
+    {
+     "asset": "aidevbench-1.0.0-src-linux-ubuntu-24.04.tar",
+     "member": "linux/ubuntu/systemd/255.4-1ubuntu8.18/"
+    }
+   ]
+  },
+  "ubuntu:util-linux": {
+   "name": "Ubuntu 24.04 source package util-linux",
+   "version": "2.39.3-9ubuntu6.6",
+   "license": "LGPL-2.1-or-later",
+   "obligation": "copyleft",
+   "platforms": {
+    "linux-aarch64": 2,
+    "linux-x86_64": 2
+   },
+   "sources": [
+    {
+     "asset": "aidevbench-1.0.0-src-linux-ubuntu-24.04.tar",
+     "member": "linux/ubuntu/util-linux/2.39.3-9ubuntu6.6/"
+    }
+   ]
+  },
+  "ubuntu:xft": {
+   "name": "Ubuntu 24.04 source package xft",
+   "version": "2.3.6-1build1",
+   "license": "see debian/copyright (permissive)",
+   "obligation": "provided",
+   "platforms": {
+    "linux-x86_64": 1
+   },
+   "sources": [
+    {
+     "asset": "aidevbench-1.0.0-src-linux-ubuntu-24.04.tar",
+     "member": "linux/ubuntu/xft/2.3.6-1build1/"
+    }
+   ]
+  },
+  "ubuntu:xz-utils": {
+   "name": "Ubuntu 24.04 source package xz-utils",
+   "version": "5.6.1+really5.4.5-1ubuntu0.4",
+   "license": "see debian/copyright (permissive)",
+   "obligation": "provided",
+   "platforms": {
+    "linux-aarch64": 2,
+    "linux-x86_64": 2
+   },
+   "sources": [
+    {
+     "asset": "aidevbench-1.0.0-src-linux-ubuntu-24.04.tar",
+     "member": "linux/ubuntu/xz-utils/5.6.1+really5.4.5-1ubuntu0.4/"
+    }
+   ]
+  },
+  "ubuntu:zlib": {
+   "name": "Ubuntu 24.04 source package zlib",
+   "version": "1:1.3.dfsg-3.1ubuntu2.3",
+   "license": "see debian/copyright (permissive)",
+   "obligation": "provided",
+   "platforms": {
+    "linux-aarch64": 4,
+    "linux-x86_64": 5
+   },
+   "sources": [
+    {
+     "asset": "aidevbench-1.0.0-src-linux-ubuntu-24.04.tar",
+     "member": "linux/ubuntu/zlib/1%3a1.3.dfsg-3.1ubuntu2.3/"
+    }
+   ]
+  }
+ }
+}
