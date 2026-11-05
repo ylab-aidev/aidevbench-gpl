@@ -1,8 +1,8 @@
 {
  "schema": "aidevbench-gpl-source-index-files-1",
  "platform": "linux-aarch64",
- "runtime_admission_sha256": "8fc8b6c5c23128f73cee75dad7875e962f1e1e9294e05df0343beb402dd5fb6b (r7)",
- "runtime_inventory": "linux-aarch64-r5.json (every indexed file checked against the ADMISSION.json above: same path and SHA-256)",
+ "runtime_admission_sha256": "77a8e9b2256292ff42e0db892ca70a500fa5ad72d3b6c9bc0614be9b9a2bd940 (r8)",
+ "runtime_inventory": "linux-aarch64-r8.ADMISSION.json (the catalog of the sealed runtime)",
  "note": "Paths after extracting the AI DevEnv Bench 1.0.0 ZIP (Windows: inside Data.bin, restored to app/runtime/; macOS: inside AIDevBench.app).",
  "files": [
   {

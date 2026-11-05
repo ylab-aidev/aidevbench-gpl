@@ -26,7 +26,7 @@ source in this repository with a compatible ABI and replace the file of the same
 | Linux | `app/runtime/application/runtime/web/browser/chromium-debian-156.0.8078.73/lib*.so*` | Ubuntu and Debian library packages |
 | Linux | `app/runtime/application/runtime/tools/prefix/bin/{bash,head,ls,nl,sed,tr}`, `.../portable/prefix/bin/readelf` | Ubuntu bash, coreutils, sed, binutils |
 | Windows | `app/runtime/route-runtime/git/usr/bin/*.dll`, `app/runtime/bundle/tools/git/usr/bin/*.dll` | MSYS2 runtime, libiconv, gettext |
-| Windows | `app/runtime/route-runtime/git/ucrt64/bin/*.dll`, `.../git-native/clangarm64/bin/*.dll` | mingw-w64 libiconv, gettext, libidn2, libunistring |
+| Windows | `app/runtime/route-runtime/git/ucrt64/bin/*.dll` (x64), `app/runtime/route-runtime/git/clangarm64/bin/*.dll` and `.../git-native/clangarm64/bin/*.dll` (ARM64) | mingw-w64 libiconv, gettext, libidn2, libunistring, pcre2, zlib |
 | Windows | Git, Bash and GNU tools under `.../git/`, `.../git-native/` | Git for Windows, MSYS2 packages |
 | macOS | `<mac>/application/runtime/tools/prefix/bin/{bash,git,head,ls,nl,sed,tr}` (with Git's `libexec/git-core/`), `<mac>/application/runtime/portable/bin/touch` | GNU Bash, coreutils, sed and Git built from source: `macos/gnu-tools/BUILD.md` in `aidevbench-1.0.0-src-macos-gnu-tools.tar` |
 

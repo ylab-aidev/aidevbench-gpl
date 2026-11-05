@@ -1,8 +1,8 @@
 {
  "schema": "aidevbench-gpl-source-index-files-1",
  "platform": "windows-arm64",
- "runtime_admission_sha256": "11bd88ac4b1e5d68b5f6930571455df63f5852b69c697d61e018450f0d748124 (r4)",
- "runtime_inventory": "windows-arm64-r2.json (every indexed file checked against the ADMISSION.json above: same path and SHA-256)",
+ "runtime_admission_sha256": "6e3db8987a331b5b2d97c9e81df052f07fcc99799846c9ca2729dc0e542d44da (r7)",
+ "runtime_inventory": "windows-arm64-r7.ADMISSION.json (the catalog of the sealed runtime)",
  "note": "Paths after extracting the AI DevEnv Bench 1.0.0 ZIP (Windows: inside Data.bin, restored to app/runtime/; macOS: inside AIDevBench.app).",
  "files": [
   {
@@ -103649,15 +103649,162 @@
   },
   {
    "path": "app/runtime/route-runtime/git/bin/bash.exe",
-   "bytes": 44904,
-   "sha256": "4740ceda8997f13997da982e32f8bc3d679d8abb30266f0b25804ea927bb4a92",
+   "bytes": 42696,
+   "sha256": "48c61ca0d516f56a562ed17f079b0e267b8b4591d2fb9315d969c7b86c698b4a",
+   "component": "gfw-git",
+   "version": "2.56.0.windows.4 (mingw-w64-git 2.56.0.4-1)"
+  },
+  {
+   "path": "app/runtime/route-runtime/git/clangarm64/bin/git.exe",
+   "bytes": 3976392,
+   "sha256": "e7ce4a903289e85e8cf2ae9c7474819b058d298a653480556ebcd8408584c0d6",
+   "component": "gfw-git",
+   "version": "2.56.0.windows.4 (mingw-w64-git 2.56.0.4-1)"
+  },
+  {
+   "path": "app/runtime/route-runtime/git/clangarm64/bin/libiconv-2.dll",
+   "bytes": 1108992,
+   "sha256": "5eb3e024adbeb40e990530b64498fa5305b4ebeaa34db971196f92317f70a35d",
+   "component": "mingw-libiconv",
+   "version": "1.19-1"
+  },
+  {
+   "path": "app/runtime/route-runtime/git/clangarm64/bin/libintl-8.dll",
+   "bytes": 268288,
+   "sha256": "31db0d0e7780cf28dca1309a894cb775b2ab130c4ba777c546a206970ca47320",
+   "component": "mingw-gettext",
+   "version": "1.0-1"
+  },
+  {
+   "path": "app/runtime/route-runtime/git/clangarm64/bin/libpcre2-8-0.dll",
+   "bytes": 735232,
+   "sha256": "502f29e009b367c9e141b1ab5244474fd1cf268115b33f4e87449307ae40f236",
+   "component": "mingw-pcre2",
+   "version": "10.49-1"
+  },
+  {
+   "path": "app/runtime/route-runtime/git/clangarm64/bin/zlib1.dll",
+   "bytes": 112640,
+   "sha256": "e13e738026a803cb2adcb48414b2fa0b982d291e2ea717bf3c850ba46e37eb28",
+   "component": "mingw-zlib",
+   "version": "1.3.2-3"
+  },
+  {
+   "path": "app/runtime/route-runtime/git/clangarm64/share/git-core/templates/description",
+   "bytes": 73,
+   "sha256": "85ab6c163d43a17ea9cf7788308bca1466f1b0a8d1cc92e26e9bf63da4062aee",
+   "component": "gfw-git",
+   "version": "2.56.0.windows.4 (mingw-w64-git 2.56.0.4-1)"
+  },
+  {
+   "path": "app/runtime/route-runtime/git/clangarm64/share/git-core/templates/hooks/applypatch-msg.sample",
+   "bytes": 478,
+   "sha256": "0223497a0b8b033aa58a3a521b8629869386cf7ab0e2f101963d328aa62193f7",
+   "component": "gfw-git",
+   "version": "2.56.0.windows.4 (mingw-w64-git 2.56.0.4-1)"
+  },
+  {
+   "path": "app/runtime/route-runtime/git/clangarm64/share/git-core/templates/hooks/commit-msg.sample",
+   "bytes": 1972,
+   "sha256": "efc1401b0e99d1ff51494d154d98b46c1e99059bcd8bf9f73cecde19fd3eb23b",
+   "component": "gfw-git",
+   "version": "2.56.0.windows.4 (mingw-w64-git 2.56.0.4-1)"
+  },
+  {
+   "path": "app/runtime/route-runtime/git/clangarm64/share/git-core/templates/hooks/fsmonitor-watchman.sample",
+   "bytes": 4611,
+   "sha256": "9159720099ad5595b8e66645cbfd47763c1e920f46e0b50ae75e642bbec57ef0",
+   "component": "gfw-git",
+   "version": "2.56.0.windows.4 (mingw-w64-git 2.56.0.4-1)"
+  },
+  {
+   "path": "app/runtime/route-runtime/git/clangarm64/share/git-core/templates/hooks/post-update.sample",
+   "bytes": 189,
+   "sha256": "81765af2daef323061dcbc5e61fc16481cb74b3bac9ad8a174b186523586f6c5",
+   "component": "gfw-git",
+   "version": "2.56.0.windows.4 (mingw-w64-git 2.56.0.4-1)"
+  },
+  {
+   "path": "app/runtime/route-runtime/git/clangarm64/share/git-core/templates/hooks/pre-applypatch.sample",
+   "bytes": 424,
+   "sha256": "e15c5b469ea3e0a695bea6f2c82bcf8e62821074939ddd85b77e0007ff165475",
+   "component": "gfw-git",
+   "version": "2.56.0.windows.4 (mingw-w64-git 2.56.0.4-1)"
+  },
+  {
+   "path": "app/runtime/route-runtime/git/clangarm64/share/git-core/templates/hooks/pre-commit.sample",
+   "bytes": 1649,
+   "sha256": "57185b7b9f05239d7ab52db045f5b89eb31348d7b2177eab214f5eb872e1971b",
+   "component": "gfw-git",
+   "version": "2.56.0.windows.4 (mingw-w64-git 2.56.0.4-1)"
+  },
+  {
+   "path": "app/runtime/route-runtime/git/clangarm64/share/git-core/templates/hooks/pre-merge-commit.sample",
+   "bytes": 416,
+   "sha256": "d3825a70337940ebbd0a5c072984e13245920cdf8898bd225c8d27a6dfc9cb53",
+   "component": "gfw-git",
+   "version": "2.56.0.windows.4 (mingw-w64-git 2.56.0.4-1)"
+  },
+  {
+   "path": "app/runtime/route-runtime/git/clangarm64/share/git-core/templates/hooks/pre-push.sample",
+   "bytes": 1374,
+   "sha256": "ecce9c7e04d3f5dd9d8ada81753dd1d549a9634b26770042b58dda00217d086a",
+   "component": "gfw-git",
+   "version": "2.56.0.windows.4 (mingw-w64-git 2.56.0.4-1)"
+  },
+  {
+   "path": "app/runtime/route-runtime/git/clangarm64/share/git-core/templates/hooks/pre-rebase.sample",
+   "bytes": 4898,
+   "sha256": "4febce867790052338076f4e66cc47efb14879d18097d1d61c8261859eaaa7b3",
+   "component": "gfw-git",
+   "version": "2.56.0.windows.4 (mingw-w64-git 2.56.0.4-1)"
+  },
+  {
+   "path": "app/runtime/route-runtime/git/clangarm64/share/git-core/templates/hooks/pre-receive.sample",
+   "bytes": 544,
+   "sha256": "a4c3d2b9c7bb3fd8d1441c31bd4ee71a595d66b44fcf49ddb310252320169989",
+   "component": "gfw-git",
+   "version": "2.56.0.windows.4 (mingw-w64-git 2.56.0.4-1)"
+  },
+  {
+   "path": "app/runtime/route-runtime/git/clangarm64/share/git-core/templates/hooks/prepare-commit-msg.sample",
+   "bytes": 1492,
+   "sha256": "e9ddcaa4189fddd25ed97fc8c789eca7b6ca16390b2392ae3276f0c8e1aa4619",
+   "component": "gfw-git",
+   "version": "2.56.0.windows.4 (mingw-w64-git 2.56.0.4-1)"
+  },
+  {
+   "path": "app/runtime/route-runtime/git/clangarm64/share/git-core/templates/hooks/push-to-checkout.sample",
+   "bytes": 2783,
+   "sha256": "a53d0741798b287c6dd7afa64aee473f305e65d3f49463bb9d7408ec3b12bf5f",
+   "component": "gfw-git",
+   "version": "2.56.0.windows.4 (mingw-w64-git 2.56.0.4-1)"
+  },
+  {
+   "path": "app/runtime/route-runtime/git/clangarm64/share/git-core/templates/hooks/sendemail-validate.sample",
+   "bytes": 2308,
+   "sha256": "44ebfc923dc5466bc009602f0ecf067b9c65459abfe8868ddc49b78e6ced7a92",
+   "component": "gfw-git",
+   "version": "2.56.0.windows.4 (mingw-w64-git 2.56.0.4-1)"
+  },
+  {
+   "path": "app/runtime/route-runtime/git/clangarm64/share/git-core/templates/hooks/update.sample",
+   "bytes": 3650,
+   "sha256": "8d5f2fa83e103cf08b57eaa67521df9194f45cbdbcb37da52ad586097a14d106",
+   "component": "gfw-git",
+   "version": "2.56.0.windows.4 (mingw-w64-git 2.56.0.4-1)"
+  },
+  {
+   "path": "app/runtime/route-runtime/git/clangarm64/share/git-core/templates/info/exclude",
+   "bytes": 240,
+   "sha256": "6671fe83b7a07c8932ee89164d1f2793b2318058eb8b98dc5c06ee0a5a3b0ec1",
    "component": "gfw-git",
    "version": "2.56.0.windows.4 (mingw-w64-git 2.56.0.4-1)"
   },
   {
    "path": "app/runtime/route-runtime/git/cmd/git.exe",
-   "bytes": 44888,
-   "sha256": "20d0dde30a65afb6e5810a883700a94dcd77fbf3b44b32868d45bf7c9b30137c",
+   "bytes": 42696,
+   "sha256": "221540c49540b4529517a68d978c2ad61de8e3d5eafb4b5943ac2bf3d22fbcf6",
    "component": "gfw-git",
    "version": "2.56.0.windows.4 (mingw-w64-git 2.56.0.4-1)"
   },
@@ -103685,7 +103832,7 @@
   {
    "path": "app/runtime/route-runtime/git/etc/gitconfig",
    "bytes": 357,
-   "sha256": "1e7f3b0f0e55471359fae1c87ada4a5405593e8f9bef5d1534dc3bc63b157996",
+   "sha256": "1d96f8afa98fc13d7a41d8d5db43ff803fb414cb7bdb9e3b6c3d396a70f11882",
    "component": "gfw-git-extra",
    "version": "1.1.715.85f886165-1"
   },
@@ -103712,157 +103859,10 @@
   },
   {
    "path": "app/runtime/route-runtime/git/etc/package-versions.txt",
-   "bytes": 4488,
-   "sha256": "d845eb4c3a34dd134233841edf1c2e1bfc067b5843797b944f31145c5a3cb689",
+   "bytes": 4391,
+   "sha256": "a1323c85214929645e7600635907846ded44d62208d3db7315c0e388a6d89185",
    "component": "gfw-git-extra",
    "version": "1.1.715.85f886165-1"
-  },
-  {
-   "path": "app/runtime/route-runtime/git/ucrt64/bin/git.exe",
-   "bytes": 4412760,
-   "sha256": "9c75f3f41eb5686bacde4b7c4fdfcd7970e8b699ee05c8d7a0cc9c8a7ddaffe8",
-   "component": "gfw-git",
-   "version": "2.56.0.windows.4 (mingw-w64-git 2.56.0.4-1)"
-  },
-  {
-   "path": "app/runtime/route-runtime/git/ucrt64/bin/libiconv-2.dll",
-   "bytes": 1141951,
-   "sha256": "94ec68fb8d342b6c91b6b48a8d95092819cdcd006a7166e0b68062f946afd08a",
-   "component": "mingw-libiconv",
-   "version": "1.19-1"
-  },
-  {
-   "path": "app/runtime/route-runtime/git/ucrt64/bin/libintl-8.dll",
-   "bytes": 298164,
-   "sha256": "0e5a178731e6be6d115442a6ade3df7f03265cd1fc4338f8b6f86a8001cbf582",
-   "component": "mingw-gettext",
-   "version": "1.0-1"
-  },
-  {
-   "path": "app/runtime/route-runtime/git/ucrt64/bin/libpcre2-8-0.dll",
-   "bytes": 706022,
-   "sha256": "1f609cde2ce432efb7d2b0c7b84a14a6dbfc9622d1ac1a3cbadf51c5b0b4dada",
-   "component": "mingw-pcre2",
-   "version": "10.49-1"
-  },
-  {
-   "path": "app/runtime/route-runtime/git/ucrt64/bin/zlib1.dll",
-   "bytes": 121530,
-   "sha256": "8ae7aeb0467763a1e271cd831ca8e2f7fd101602adb9923100ea26c6be2a559b",
-   "component": "mingw-zlib",
-   "version": "1.3.2-3"
-  },
-  {
-   "path": "app/runtime/route-runtime/git/ucrt64/share/git-core/templates/description",
-   "bytes": 73,
-   "sha256": "85ab6c163d43a17ea9cf7788308bca1466f1b0a8d1cc92e26e9bf63da4062aee",
-   "component": "gfw-git",
-   "version": "2.56.0.windows.4 (mingw-w64-git 2.56.0.4-1)"
-  },
-  {
-   "path": "app/runtime/route-runtime/git/ucrt64/share/git-core/templates/hooks/applypatch-msg.sample",
-   "bytes": 478,
-   "sha256": "0223497a0b8b033aa58a3a521b8629869386cf7ab0e2f101963d328aa62193f7",
-   "component": "gfw-git",
-   "version": "2.56.0.windows.4 (mingw-w64-git 2.56.0.4-1)"
-  },
-  {
-   "path": "app/runtime/route-runtime/git/ucrt64/share/git-core/templates/hooks/commit-msg.sample",
-   "bytes": 1972,
-   "sha256": "efc1401b0e99d1ff51494d154d98b46c1e99059bcd8bf9f73cecde19fd3eb23b",
-   "component": "gfw-git",
-   "version": "2.56.0.windows.4 (mingw-w64-git 2.56.0.4-1)"
-  },
-  {
-   "path": "app/runtime/route-runtime/git/ucrt64/share/git-core/templates/hooks/fsmonitor-watchman.sample",
-   "bytes": 4611,
-   "sha256": "9159720099ad5595b8e66645cbfd47763c1e920f46e0b50ae75e642bbec57ef0",
-   "component": "gfw-git",
-   "version": "2.56.0.windows.4 (mingw-w64-git 2.56.0.4-1)"
-  },
-  {
-   "path": "app/runtime/route-runtime/git/ucrt64/share/git-core/templates/hooks/post-update.sample",
-   "bytes": 189,
-   "sha256": "81765af2daef323061dcbc5e61fc16481cb74b3bac9ad8a174b186523586f6c5",
-   "component": "gfw-git",
-   "version": "2.56.0.windows.4 (mingw-w64-git 2.56.0.4-1)"
-  },
-  {
-   "path": "app/runtime/route-runtime/git/ucrt64/share/git-core/templates/hooks/pre-applypatch.sample",
-   "bytes": 424,
-   "sha256": "e15c5b469ea3e0a695bea6f2c82bcf8e62821074939ddd85b77e0007ff165475",
-   "component": "gfw-git",
-   "version": "2.56.0.windows.4 (mingw-w64-git 2.56.0.4-1)"
-  },
-  {
-   "path": "app/runtime/route-runtime/git/ucrt64/share/git-core/templates/hooks/pre-commit.sample",
-   "bytes": 1649,
-   "sha256": "57185b7b9f05239d7ab52db045f5b89eb31348d7b2177eab214f5eb872e1971b",
-   "component": "gfw-git",
-   "version": "2.56.0.windows.4 (mingw-w64-git 2.56.0.4-1)"
-  },
-  {
-   "path": "app/runtime/route-runtime/git/ucrt64/share/git-core/templates/hooks/pre-merge-commit.sample",
-   "bytes": 416,
-   "sha256": "d3825a70337940ebbd0a5c072984e13245920cdf8898bd225c8d27a6dfc9cb53",
-   "component": "gfw-git",
-   "version": "2.56.0.windows.4 (mingw-w64-git 2.56.0.4-1)"
-  },
-  {
-   "path": "app/runtime/route-runtime/git/ucrt64/share/git-core/templates/hooks/pre-push.sample",
-   "bytes": 1374,
-   "sha256": "ecce9c7e04d3f5dd9d8ada81753dd1d549a9634b26770042b58dda00217d086a",
-   "component": "gfw-git",
-   "version": "2.56.0.windows.4 (mingw-w64-git 2.56.0.4-1)"
-  },
-  {
-   "path": "app/runtime/route-runtime/git/ucrt64/share/git-core/templates/hooks/pre-rebase.sample",
-   "bytes": 4898,
-   "sha256": "4febce867790052338076f4e66cc47efb14879d18097d1d61c8261859eaaa7b3",
-   "component": "gfw-git",
-   "version": "2.56.0.windows.4 (mingw-w64-git 2.56.0.4-1)"
-  },
-  {
-   "path": "app/runtime/route-runtime/git/ucrt64/share/git-core/templates/hooks/pre-receive.sample",
-   "bytes": 544,
-   "sha256": "a4c3d2b9c7bb3fd8d1441c31bd4ee71a595d66b44fcf49ddb310252320169989",
-   "component": "gfw-git",
-   "version": "2.56.0.windows.4 (mingw-w64-git 2.56.0.4-1)"
-  },
-  {
-   "path": "app/runtime/route-runtime/git/ucrt64/share/git-core/templates/hooks/prepare-commit-msg.sample",
-   "bytes": 1492,
-   "sha256": "e9ddcaa4189fddd25ed97fc8c789eca7b6ca16390b2392ae3276f0c8e1aa4619",
-   "component": "gfw-git",
-   "version": "2.56.0.windows.4 (mingw-w64-git 2.56.0.4-1)"
-  },
-  {
-   "path": "app/runtime/route-runtime/git/ucrt64/share/git-core/templates/hooks/push-to-checkout.sample",
-   "bytes": 2783,
-   "sha256": "a53d0741798b287c6dd7afa64aee473f305e65d3f49463bb9d7408ec3b12bf5f",
-   "component": "gfw-git",
-   "version": "2.56.0.windows.4 (mingw-w64-git 2.56.0.4-1)"
-  },
-  {
-   "path": "app/runtime/route-runtime/git/ucrt64/share/git-core/templates/hooks/sendemail-validate.sample",
-   "bytes": 2308,
-   "sha256": "44ebfc923dc5466bc009602f0ecf067b9c65459abfe8868ddc49b78e6ced7a92",
-   "component": "gfw-git",
-   "version": "2.56.0.windows.4 (mingw-w64-git 2.56.0.4-1)"
-  },
-  {
-   "path": "app/runtime/route-runtime/git/ucrt64/share/git-core/templates/hooks/update.sample",
-   "bytes": 3650,
-   "sha256": "8d5f2fa83e103cf08b57eaa67521df9194f45cbdbcb37da52ad586097a14d106",
-   "component": "gfw-git",
-   "version": "2.56.0.windows.4 (mingw-w64-git 2.56.0.4-1)"
-  },
-  {
-   "path": "app/runtime/route-runtime/git/ucrt64/share/git-core/templates/info/exclude",
-   "bytes": 240,
-   "sha256": "6671fe83b7a07c8932ee89164d1f2793b2318058eb8b98dc5c06ee0a5a3b0ec1",
-   "component": "gfw-git",
-   "version": "2.56.0.windows.4 (mingw-w64-git 2.56.0.4-1)"
   },
   {
    "path": "app/runtime/route-runtime/git/usr/bin/bash.exe",

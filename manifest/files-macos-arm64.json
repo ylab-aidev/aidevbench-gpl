@@ -1,8 +1,8 @@
 {
  "schema": "aidevbench-gpl-source-index-files-1",
  "platform": "macos-arm64",
- "runtime_admission_sha256": "2f00e4f5c2b16fa44794d64b06f344ea91d2c9b00845fd5f8ac911889968be17 (r4)",
- "runtime_inventory": "macos-arm64-r4.ADMISSION.json (the catalog of the sealed runtime)",
+ "runtime_admission_sha256": "fdaa6069aff41002055b9ad58ec76c9deb082d47fe31030c9a22e71f44205407 (r6)",
+ "runtime_inventory": "macos-arm64-r6.ADMISSION.json (the catalog of the sealed runtime)",
  "note": "Paths after extracting the AI DevEnv Bench 1.0.0 ZIP (Windows: inside Data.bin, restored to app/runtime/; macOS: inside AIDevBench.app).",
  "files": [
   {

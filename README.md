@@ -15,11 +15,11 @@ AI DevEnv Bench 本体（権利者 Yuha @ Yuhalab が作成した部分）はク
 
 | 実行環境 | 版 | `app/runtime/ADMISSION.json` の SHA-256 |
 |---|---|---|
-| Windows x64 | r15 | `215d38be1ea9ff8e960a6353d7e7e4238ff4f888323b7bda657dc85dd37745b4` |
-| Windows ARM64 | r4 | `11bd88ac4b1e5d68b5f6930571455df63f5852b69c697d61e018450f0d748124` |
-| Linux x86_64 | r14 | `06a7e091d682e01902efbaefc20d563e864222d3fea3d0255e7992571463fe59` |
-| Linux aarch64 | r7 | `8fc8b6c5c23128f73cee75dad7875e962f1e1e9294e05df0343beb402dd5fb6b` |
-| macOS arm64 | r4 | `2f00e4f5c2b16fa44794d64b06f344ea91d2c9b00845fd5f8ac911889968be17` |
+| Windows x64 | r19 | `c56b37878a53db65d9919dbcc59bff98d3a63f0a72bc8246222d16ebfd7d5dcb` |
+| Windows ARM64 | r7 | `6e3db8987a331b5b2d97c9e81df052f07fcc99799846c9ca2729dc0e542d44da` |
+| Linux x86_64 | r16 | `b74e89eb21a1e9b659169997d7267737e24f336f0419b33c5224af17875fae17` |
+| Linux aarch64 | r8 | `77a8e9b2256292ff42e0db892ca70a500fa5ad72d3b6c9bc0614be9b9a2bd940` |
+| macOS arm64 | r6 | `fdaa6069aff41002055b9ad58ec76c9deb082d47fe31030c9a22e71f44205407` |
 
 Windows版は x64／ARM64 共通のZIP（`Data.bin` から実行するCPU用だけを `app/` に復元）、Linux版は x86_64 と aarch64 の別ZIP、macOS版は Apple Silicon 用のZIP（`AIDevBench.app`）です。
 

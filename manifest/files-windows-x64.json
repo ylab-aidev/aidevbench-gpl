@@ -1,8 +1,8 @@
 {
  "schema": "aidevbench-gpl-source-index-files-1",
  "platform": "windows-x64",
- "runtime_admission_sha256": "215d38be1ea9ff8e960a6353d7e7e4238ff4f888323b7bda657dc85dd37745b4 (r15)",
- "runtime_inventory": "windows-x64-r13.json (every indexed file checked against the ADMISSION.json above: same path and SHA-256)",
+ "runtime_admission_sha256": "c56b37878a53db65d9919dbcc59bff98d3a63f0a72bc8246222d16ebfd7d5dcb (r19)",
+ "runtime_inventory": "windows-x64-r19.ADMISSION.json (the catalog of the sealed runtime)",
  "note": "Paths after extracting the AI DevEnv Bench 1.0.0 ZIP (Windows: inside Data.bin, restored to app/runtime/; macOS: inside AIDevBench.app).",
  "files": [
   {
